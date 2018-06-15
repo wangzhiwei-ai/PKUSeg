@@ -1,0 +1,42 @@
+F:\bigram\tools\crf_seg\newner\bin\x64\Release\newner.exe.config
+F:\bigram\tools\crf_seg\newner\bin\x64\Release\newner.exe
+F:\bigram\tools\crf_seg\newner\bin\x64\Release\newner.pdb
+F:\bigram\tools\crf_seg\newner\obj\x64\Release\seg.csproj.CoreCompileInputs.cache
+F:\bigram\tools\crf_seg\newner\obj\x64\Release\newner.exe
+F:\bigram\tools\crf_seg\newner\obj\x64\Release\newner.pdb
+F:\bigram\tools\crf_seg_adf\newner\obj\x64\Release\seg.csprojResolveAssemblyReference.cache
+F:\bigram\tools\crf_seg_adf\newner\obj\x64\Release\seg.csproj.CoreCompileInputs.cache
+F:\bigram\tools\crf_seg_adf\newner\bin\x64\Release\seg.exe.config
+F:\bigram\tools\crf_seg_adf\newner\bin\x64\Release\seg.exe
+F:\bigram\tools\crf_seg_adf\newner\bin\x64\Release\seg.pdb
+F:\bigram\tools\crf_seg_adf\newner\obj\x64\Release\seg.exe
+F:\bigram\tools\crf_seg_adf\newner\obj\x64\Release\seg.pdb
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test\newner\bin\x64\Release\LSTM.exe.config
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test\newner\bin\x64\Release\LSTM.exe
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test\newner\bin\x64\Release\LSTM.pdb
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test\newner\bin\x64\Release\MathNet.Numerics.dll
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test\newner\bin\x64\Release\MathNet.Numerics.xml
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test\newner\obj\x64\Release\seg.csprojResolveAssemblyReference.cache
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test\newner\obj\x64\Release\seg.csproj.CoreCompileInputs.cache
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test\newner\obj\x64\Release\seg.csproj.CopyComplete
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test\newner\obj\x64\Release\LSTM.exe
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test\newner\obj\x64\Release\LSTM.pdb
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test - 副本\newner\bin\x64\Release\LSTM.exe.config
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test - 副本\newner\bin\x64\Release\LSTM.exe
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test - 副本\newner\bin\x64\Release\LSTM.pdb
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test - 副本\newner\bin\x64\Release\MathNet.Numerics.dll
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test - 副本\newner\bin\x64\Release\MathNet.Numerics.xml
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test - 副本\newner\obj\x64\Release\seg.csprojResolveAssemblyReference.cache
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test - 副本\newner\obj\x64\Release\seg.csproj.CoreCompileInputs.cache
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test - 副本\newner\obj\x64\Release\seg.csproj.CopyComplete
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test - 副本\newner\obj\x64\Release\LSTM.exe
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test - 副本\newner\obj\x64\Release\LSTM.pdb
+F:\github\word_seg\newner\bin\x64\Release\LSTM.exe.config
+F:\github\word_seg\newner\bin\x64\Release\LSTM.exe
+F:\github\word_seg\newner\bin\x64\Release\LSTM.pdb
+F:\github\word_seg\newner\bin\x64\Release\MathNet.Numerics.dll
+F:\github\word_seg\newner\bin\x64\Release\MathNet.Numerics.xml
+F:\github\word_seg\newner\obj\x64\Release\seg.csproj.CoreCompileInputs.cache
+F:\github\word_seg\newner\obj\x64\Release\seg.csproj.CopyComplete
+F:\github\word_seg\newner\obj\x64\Release\LSTM.exe
+F:\github\word_seg\newner\obj\x64\Release\LSTM.pdb

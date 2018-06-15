@@ -1,0 +1,19 @@
+C:\Users\dell\Desktop\files\863\code\crf\newner\newner\bin\x64\Release\newner.exe.config
+C:\Users\dell\Desktop\files\863\code\crf\newner\newner\bin\x64\Release\newner.exe
+C:\Users\dell\Desktop\files\863\code\crf\newner\newner\bin\x64\Release\newner.pdb
+C:\Users\dell\Desktop\files\863\code\crf\newner\newner\obj\x64\Release\newner.exe
+C:\Users\dell\Desktop\files\863\code\crf\newner\newner\obj\x64\Release\newner.pdb
+C:\Users\dell\Desktop\files\863\code\crf\newner\newner\obj\x64\Release\newner.csprojResolveAssemblyReference.cache
+C:\Users\dell\Desktop\files\863\code\crf\final_ner\newner\bin\x64\Release\newner.exe.config
+C:\Users\dell\Desktop\files\863\code\crf\final_ner\newner\bin\x64\Release\newner.exe
+C:\Users\dell\Desktop\files\863\code\crf\final_ner\newner\bin\x64\Release\newner.pdb
+C:\Users\dell\Desktop\files\863\code\crf\final_ner\newner\obj\x64\Release\newner.csprojResolveAssemblyReference.cache
+C:\Users\dell\Desktop\files\863\code\crf\final_ner\newner\obj\x64\Release\newner.exe
+C:\Users\dell\Desktop\files\863\code\crf\final_ner\newner\obj\x64\Release\newner.pdb
+C:\Users\dell\Desktop\files\863\code\crf\final_ner - 副本\newner\bin\x64\Release\newner.exe.config
+C:\Users\dell\Desktop\files\863\code\crf\final_ner - 副本\newner\bin\x64\Release\newner.exe
+C:\Users\dell\Desktop\files\863\code\crf\final_ner - 副本\newner\bin\x64\Release\newner.pdb
+C:\Users\dell\Desktop\files\863\code\crf\final_ner - 副本\newner\obj\x64\Release\newner.csprojResolveAssemblyReference.cache
+C:\Users\dell\Desktop\files\863\code\crf\final_ner - 副本\newner\obj\x64\Release\newner.csproj.CoreCompileInputs.cache
+C:\Users\dell\Desktop\files\863\code\crf\final_ner - 副本\newner\obj\x64\Release\newner.exe
+C:\Users\dell\Desktop\files\863\code\crf\final_ner - 副本\newner\obj\x64\Release\newner.pdb

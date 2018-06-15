@@ -1,0 +1,6 @@
+C:\Users\dell\Desktop\files\863\code\crf\newner\newner\bin\x64\Debug\newner.exe.config
+C:\Users\dell\Desktop\files\863\code\crf\newner\newner\bin\x64\Debug\newner.exe
+C:\Users\dell\Desktop\files\863\code\crf\newner\newner\bin\x64\Debug\newner.pdb
+C:\Users\dell\Desktop\files\863\code\crf\newner\newner\obj\x64\Debug\newner.exe
+C:\Users\dell\Desktop\files\863\code\crf\newner\newner\obj\x64\Debug\newner.pdb
+C:\Users\dell\Desktop\files\863\code\crf\newner\newner\obj\x64\Debug\newner.csprojResolveAssemblyReference.cache

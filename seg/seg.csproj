@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6067152A-9C8F-4F9F-939A-4D516D1898B4}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LSTM</RootNamespace>
+    <AssemblyName>LSTM</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MathNet.Numerics, Version=4.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MathNet.Numerics.4.5.1\lib\net40\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="crf\A.Global.cs" />
+    <Compile Include="crf\A.Main.cs" />
+    <Compile Include="crf\Base.Fscore.cs" />
+    <Compile Include="crf\Base.HashMap.cs" />
+    <Compile Include="crf\Base.HashSet.cs" />
+    <Compile Include="crf\Base.Math.cs" />
+    <Compile Include="crf\Base.Matrix.cs" />
+    <Compile Include="crf\Base.ResProcess.cs" />
+    <Compile Include="crf\Base.SmallTool.cs" />
+    <Compile Include="crf\Base.Viterbi.cs" />
+    <Compile Include="crf\CRF.Dataset.cs" />
+    <Compile Include="crf\CRF.FeatureGenerator.cs" />
+    <Compile Include="crf\CRF.Gradient.cs" />
+    <Compile Include="crf\CRF.Inference.cs" />
+    <Compile Include="crf\CRF.Model.cs" />
+    <Compile Include="crf\CRF.RichEdge.cs" />
+    <Compile Include="crf\CRF.ToolboxTrainTest.cs" />
+    <Compile Include="crf\feature\Base.HashMap.cs" />
+    <Compile Include="crf\feature\Base.HashSet.cs" />
+    <Compile Include="crf\feature\Base.Math.cs" />
+    <Compile Include="crf\feature\Feature.cs" />
+    <Compile Include="crf\feature\Global.cs" />
+    <Compile Include="crf\feature\Main.cs" />
+    <Compile Include="crf\feature\Tools.cs" />
+    <Compile Include="crf\Optim.BatchLBFGS.cs" />
+    <Compile Include="crf\Optim.Optimizer.cs" />
+    <Compile Include="crf\Optim.Stochastic.cs" />
+    <Compile Include="crf\Preprocess.cs" />
+    <Compile Include="deepNetwork\A.Global.cs" />
+    <Compile Include="deepNetwork\A.Main.cs" />
+    <Compile Include="deepNetwork\Base.Activate.cs" />
+    <Compile Include="deepNetwork\Base.Matrix.cs" />
+    <Compile Include="deepNetwork\Data.DataSequence.cs" />
+    <Compile Include="deepNetwork\Data.DataSet.cs" />
+    <Compile Include="deepNetwork\Data.DataStep.cs" />
+    <Compile Include="deepNetwork\F-score.cs" />
+    <Compile Include="deepNetwork\Layer.FeedForward.cs" />
+    <Compile Include="deepNetwork\Layer.GRNN.cs" />
+    <Compile Include="deepNetwork\Layer.LSTM.cs" />
+    <Compile Include="deepNetwork\Model.ForwdBackwdProp.cs" />
+    <Compile Include="deepNetwork\Model.LossSoftmax.cs" />
+    <Compile Include="deepNetwork\Postprocessing.cs" />
+    <Compile Include="deepNetwork\preprocess.cs" />
+    <Compile Include="deepNetwork\Runnable.cs" />
+    <Compile Include="deepNetwork\Train.RunThread.cs" />
+    <Compile Include="deepNetwork\Train.Trainer.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="crf\App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

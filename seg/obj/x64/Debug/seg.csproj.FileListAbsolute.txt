@@ -1,0 +1,96 @@
+C:\Users\dell\Desktop\files\863\code\crf\final_ner - 副本\newner\bin\x64\Debug\newner.exe.config
+C:\Users\dell\Desktop\files\863\code\crf\final_ner - 副本\newner\bin\x64\Debug\newner.exe
+C:\Users\dell\Desktop\files\863\code\crf\final_ner - 副本\newner\bin\x64\Debug\newner.pdb
+C:\Users\dell\Desktop\files\863\code\crf\final_ner - 副本\newner\obj\x64\Debug\seg.csprojResolveAssemblyReference.cache
+C:\Users\dell\Desktop\files\863\code\crf\final_ner - 副本\newner\obj\x64\Debug\seg.csproj.CoreCompileInputs.cache
+C:\Users\dell\Desktop\files\863\code\crf\final_ner - 副本\newner\obj\x64\Debug\newner.exe
+C:\Users\dell\Desktop\files\863\code\crf\final_ner - 副本\newner\obj\x64\Debug\newner.pdb
+F:\bigram\tools\crf_seg\newner\bin\x64\Debug\newner.exe.config
+F:\bigram\tools\crf_seg\newner\bin\x64\Debug\newner.exe
+F:\bigram\tools\crf_seg\newner\bin\x64\Debug\newner.pdb
+F:\bigram\tools\crf_seg\newner\obj\x64\Debug\seg.csprojResolveAssemblyReference.cache
+F:\bigram\tools\crf_seg\newner\obj\x64\Debug\seg.csproj.CoreCompileInputs.cache
+F:\bigram\tools\crf_seg\newner\obj\x64\Debug\newner.exe
+F:\bigram\tools\crf_seg\newner\obj\x64\Debug\newner.pdb
+F:\bigram\tools\crf_seg_\newner\bin\x64\Debug\newner.exe.config
+F:\bigram\tools\crf_seg_\newner\bin\x64\Debug\newner.exe
+F:\bigram\tools\crf_seg_\newner\bin\x64\Debug\newner.pdb
+F:\bigram\tools\crf_seg_\newner\obj\x64\Debug\seg.csprojResolveAssemblyReference.cache
+F:\bigram\tools\crf_seg_\newner\obj\x64\Debug\seg.csproj.CoreCompileInputs.cache
+F:\bigram\tools\crf_seg_\newner\obj\x64\Debug\newner.exe
+F:\bigram\tools\crf_seg_\newner\obj\x64\Debug\newner.pdb
+F:\bigram\tools\crf_seg_ - 副本\newner\bin\x64\Debug\newner.exe.config
+F:\bigram\tools\crf_seg_ - 副本\newner\bin\x64\Debug\newner.exe
+F:\bigram\tools\crf_seg_ - 副本\newner\bin\x64\Debug\newner.pdb
+F:\bigram\tools\crf_seg_ - 副本\newner\obj\x64\Debug\seg.csprojResolveAssemblyReference.cache
+F:\bigram\tools\crf_seg_ - 副本\newner\obj\x64\Debug\seg.csproj.CoreCompileInputs.cache
+F:\bigram\tools\crf_seg_ - 副本\newner\obj\x64\Debug\newner.exe
+F:\bigram\tools\crf_seg_ - 副本\newner\obj\x64\Debug\newner.pdb
+F:\bigram\tools\crf_seg_ - 副本 - 副本\newner\bin\x64\Debug\newner.exe.config
+F:\bigram\tools\crf_seg_ - 副本 - 副本\newner\bin\x64\Debug\newner.exe
+F:\bigram\tools\crf_seg_ - 副本 - 副本\newner\bin\x64\Debug\newner.pdb
+F:\bigram\tools\crf_seg_ - 副本 - 副本\newner\obj\x64\Debug\seg.csprojResolveAssemblyReference.cache
+F:\bigram\tools\crf_seg_ - 副本 - 副本\newner\obj\x64\Debug\seg.csproj.CoreCompileInputs.cache
+F:\bigram\tools\crf_seg_ - 副本 - 副本\newner\obj\x64\Debug\newner.exe
+F:\bigram\tools\crf_seg_ - 副本 - 副本\newner\obj\x64\Debug\newner.pdb
+F:\bigram\tools\crf_seg_ - 副本 - 副本 - 副本\newner\bin\x64\Debug\newner.exe.config
+F:\bigram\tools\crf_seg_ - 副本 - 副本 - 副本\newner\bin\x64\Debug\newner.exe
+F:\bigram\tools\crf_seg_ - 副本 - 副本 - 副本\newner\bin\x64\Debug\newner.pdb
+F:\bigram\tools\crf_seg_ - 副本 - 副本 - 副本\newner\obj\x64\Debug\seg.csprojResolveAssemblyReference.cache
+F:\bigram\tools\crf_seg_ - 副本 - 副本 - 副本\newner\obj\x64\Debug\seg.csproj.CoreCompileInputs.cache
+F:\bigram\tools\crf_seg_ - 副本 - 副本 - 副本\newner\obj\x64\Debug\newner.exe
+F:\bigram\tools\crf_seg_ - 副本 - 副本 - 副本\newner\obj\x64\Debug\newner.pdb
+F:\bigram\tools\crf_seg_ - 副本 - 副本 - 副本 - 副本\newner\bin\x64\Debug\newner.exe.config
+F:\bigram\tools\crf_seg_ - 副本 - 副本 - 副本 - 副本\newner\bin\x64\Debug\newner.exe
+F:\bigram\tools\crf_seg_ - 副本 - 副本 - 副本 - 副本\newner\bin\x64\Debug\newner.pdb
+F:\bigram\tools\crf_seg_ - 副本 - 副本 - 副本 - 副本\newner\obj\x64\Debug\seg.csprojResolveAssemblyReference.cache
+F:\bigram\tools\crf_seg_ - 副本 - 副本 - 副本 - 副本\newner\obj\x64\Debug\seg.csproj.CoreCompileInputs.cache
+F:\bigram\tools\crf_seg_ - 副本 - 副本 - 副本 - 副本\newner\obj\x64\Debug\newner.exe
+F:\bigram\tools\crf_seg_ - 副本 - 副本 - 副本 - 副本\newner\obj\x64\Debug\newner.pdb
+F:\bigram\tools\crf_seg_adf\newner\obj\x64\Debug\seg.csprojResolveAssemblyReference.cache
+F:\bigram\tools\crf_seg_adf\newner\obj\x64\Debug\seg.csproj.CoreCompileInputs.cache
+F:\bigram\tools\crf_seg_adf\newner\bin\x64\Debug\seg.exe.config
+F:\bigram\tools\crf_seg_adf\newner\bin\x64\Debug\seg.exe
+F:\bigram\tools\crf_seg_adf\newner\bin\x64\Debug\seg.pdb
+F:\bigram\tools\crf_seg_adf\newner\obj\x64\Debug\seg.exe
+F:\bigram\tools\crf_seg_adf\newner\obj\x64\Debug\seg.pdb
+F:\bigram\tools\word_seg_all\crf_seg_adf_soft_Test\newner\bin\x64\Debug\seg.exe.config
+F:\bigram\tools\word_seg_all\crf_seg_adf_soft_Test\newner\bin\x64\Debug\seg.exe
+F:\bigram\tools\word_seg_all\crf_seg_adf_soft_Test\newner\bin\x64\Debug\seg.pdb
+F:\bigram\tools\word_seg_all\crf_seg_adf_soft_Test\newner\bin\x64\Debug\MathNet.Numerics.dll
+F:\bigram\tools\word_seg_all\crf_seg_adf_soft_Test\newner\bin\x64\Debug\MathNet.Numerics.xml
+F:\bigram\tools\word_seg_all\crf_seg_adf_soft_Test\newner\obj\x64\Debug\seg.csprojResolveAssemblyReference.cache
+F:\bigram\tools\word_seg_all\crf_seg_adf_soft_Test\newner\obj\x64\Debug\seg.csproj.CoreCompileInputs.cache
+F:\bigram\tools\word_seg_all\crf_seg_adf_soft_Test\newner\obj\x64\Debug\seg.csproj.CopyComplete
+F:\bigram\tools\word_seg_all\crf_seg_adf_soft_Test\newner\obj\x64\Debug\seg.exe
+F:\bigram\tools\word_seg_all\crf_seg_adf_soft_Test\newner\obj\x64\Debug\seg.pdb
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test\newner\bin\x64\Debug\MathNet.Numerics.dll
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test\newner\bin\x64\Debug\MathNet.Numerics.xml
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test\newner\obj\x64\Debug\seg.csprojResolveAssemblyReference.cache
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test\newner\obj\x64\Debug\seg.csproj.CoreCompileInputs.cache
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test\newner\obj\x64\Debug\seg.csproj.CopyComplete
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test\newner\bin\x64\Debug\LSTM.exe.config
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test\newner\bin\x64\Debug\LSTM.exe
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test\newner\bin\x64\Debug\LSTM.pdb
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test\newner\obj\x64\Debug\LSTM.exe
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test\newner\obj\x64\Debug\LSTM.pdb
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test - 副本\newner\bin\x64\Debug\LSTM.exe.config
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test - 副本\newner\bin\x64\Debug\LSTM.exe
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test - 副本\newner\bin\x64\Debug\LSTM.pdb
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test - 副本\newner\bin\x64\Debug\MathNet.Numerics.dll
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test - 副本\newner\bin\x64\Debug\MathNet.Numerics.xml
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test - 副本\newner\obj\x64\Debug\seg.csprojResolveAssemblyReference.cache
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test - 副本\newner\obj\x64\Debug\seg.csproj.CoreCompileInputs.cache
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test - 副本\newner\obj\x64\Debug\seg.csproj.CopyComplete
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test - 副本\newner\obj\x64\Debug\LSTM.exe
+F:\bigram\tools\word_seg_all\crf_seg_adf_hard_test - 副本\newner\obj\x64\Debug\LSTM.pdb
+F:\github\word_seg\newner\bin\x64\Debug\LSTM.exe.config
+F:\github\word_seg\newner\bin\x64\Debug\LSTM.exe
+F:\github\word_seg\newner\bin\x64\Debug\LSTM.pdb
+F:\github\word_seg\newner\bin\x64\Debug\MathNet.Numerics.dll
+F:\github\word_seg\newner\bin\x64\Debug\MathNet.Numerics.xml
+F:\github\word_seg\newner\obj\x64\Debug\seg.csprojResolveAssemblyReference.cache
+F:\github\word_seg\newner\obj\x64\Debug\seg.csproj.CoreCompileInputs.cache
+F:\github\word_seg\newner\obj\x64\Debug\seg.csproj.CopyComplete
+F:\github\word_seg\newner\obj\x64\Debug\LSTM.exe
+F:\github\word_seg\newner\obj\x64\Debug\LSTM.pdb
