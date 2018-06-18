@@ -37,9 +37,9 @@ namespace Program
 
             String path1 = "data/temp/answer.txt"; // change to the path which the test script outputs
             //String path = "msr_test_gold.utf8" + "_string";
-            StreamReader reader = new StreamReader(path);
-            StreamReader reader1 = new StreamReader(path1);
-            StreamWriter writer = new StreamWriter(Global.outputFile); // change to the output path  
+            StreamReader reader = new StreamReader(path, Encoding.UTF8);
+            StreamReader reader1 = new StreamReader(path1, Encoding.UTF8);
+            StreamWriter writer = new StreamWriter(Global.outputFile, false, Encoding.UTF8); // change to the output path  
 
             string str1 = "";
             while ((str1 = reader.ReadLine()) != null)
@@ -95,12 +95,12 @@ namespace Program
                         //if(label.equals("b")&&writerstr1.length()>=1&&!writerstr1.endsWith((char)12288+"")){
                         //	writerstr1+=(char)12288+"";
                         //}
-                        //System.out.println(str1+" "+str1.length()+" "+i); writerstr1+=str1.charAt(i)+"";
+                        //Console.WriteLine(str1+" "+" "+str1[i]); 
                         //if(word.contains("做")) System.out.println(label);
                         writerstr1 += str1[i] + "";
                         if (label.Equals("s") || label.Equals("e"))
                         {
-                            writerstr1 += (char)12288 + "";
+                            writerstr1 += " ";
                         }
                     }
                     else if (word.Contains("d"))
@@ -109,7 +109,7 @@ namespace Program
                         //if(label.equals("b")&&writerstr1.length()>=1&&!writerstr1.endsWith((char)12288+"")){
                         //	writerstr1+=(char)12288+"";
                         //}
-                        while (i < halfstr1.Length && numbers.Contains(halfstr1[i] + ""))
+                        while (i < str1.Length && numbers.Contains(halfstr1[i].ToString() + ""))
                         {
                             //System.out.println(str1.charAt(i)+" "+i);
                             numword += (str1[i] + "");
@@ -119,7 +119,7 @@ namespace Program
                         writerstr1 += numword;
                         if (label.Equals("s") || label.Equals("e"))
                         {
-                            writerstr1 += (char)12288 + ""; ;
+                            writerstr1 += " ";
                         }
 
                     }
@@ -130,7 +130,7 @@ namespace Program
                         //if(label.equals("b")&&writerstr1.length()>=1&&!writerstr1.endsWith((char)12288+"")){
                         //	writerstr1+=(char)12288+"";
                         //}
-                        while (i < halfstr1.Length && numbers.Contains(halfstr1[i] + ""))
+                        while (i < str1.Length && numbers.Contains(halfstr1[i] + ""))
                         {
                             enumwrod += (str1[i] + "");
                             i++;
@@ -138,7 +138,7 @@ namespace Program
                         writerstr1 += enumwrod;
                         if (label.Equals("s") || label.Equals("e"))
                         {
-                            writerstr1 += (char)12288 + ""; ;
+                            writerstr1 += " ";
                         }
                         i--;
                     }

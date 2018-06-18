@@ -42,7 +42,7 @@ namespace Program1
                 avgM.divide(mList.Count);
                 //get devi
                 dMatrix deviM = MathTool.getDeviation(mList);
-                
+
                 sw.WriteLine("%averaged values:");
                 avgM.write(sw, fn);
                 sw.WriteLine();
@@ -60,7 +60,7 @@ namespace Program1
             }
             sw.Close();
         }
-        
+
         public static void write()
         {
             if (Global.runMode.Contains("test"))
@@ -78,13 +78,13 @@ namespace Program1
                 {
                     if (Global.rawResWrite) Global.swResRaw.Write("% {0}={1}%  ", Global.metric, list[0].ToString("f2"));
                 }
-                if (Global.rawResWrite) Global.swResRaw.WriteLine("test-time(sec)={0}", Global.timeList[0].ToString("f2"));
+                //if (Global.rawResWrite) Global.swResRaw.WriteLine("test-time(sec)={0}", Global.timeList[0].ToString("f2"));
                 //matrix format
                 foreach (double im in list)
                 {
                     if (Global.rawResWrite) Global.swResRaw.Write(im.ToString("f2") + ",");
                 }
-                if (Global.rawResWrite) Global.swResRaw.WriteLine(Global.timeList[0].ToString("f2") + ",");
+                //if (Global.rawResWrite) Global.swResRaw.WriteLine(Global.timeList[0].ToString("f2") + ",");
             }
             else
             {
@@ -143,5 +143,5 @@ namespace Program1
         }
 
     }
-    
+
 }

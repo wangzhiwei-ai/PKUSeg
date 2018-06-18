@@ -69,7 +69,7 @@ namespace Program
         //    }
         //}
 
-        
+
         public static void tonumberdata(string read1path, string wirtedatapath, string writetagpath, string writerawpath)
         {
             StreamReader sr = new StreamReader(read1path, Encoding.UTF8);
@@ -84,6 +84,27 @@ namespace Program
             {
                 string line1 = "";
                 string line1_string = "";
+
+                if (line.Trim() == "")
+                {
+                    continue;
+                }
+                string line_string = "";
+                //string line_raw = line;
+                foreach (char sword1 in line.Trim())
+                {
+                    if ((sword1 + " ").Trim() == " " || (sword1 + " ").Trim() == "")
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        line_string += sword1;
+                    }
+                }
+                sw_string.WriteLine(line_string);
+
+
                 line = ToSBC(line);
 
                 String s1 = Regex.Replace(line, "([A-Za-z] )+|[A-Za-z]+", "e");
@@ -106,7 +127,7 @@ namespace Program
                             continue;
                         }
                         line1 += (lookup(c + "") + " ");
-                        line1_string += (c);
+                        //line1_string += (c);
                         if (index == 0 && sword.Trim().Length == 1)
                         {
                             label1 += (1 + " ");
@@ -139,33 +160,36 @@ namespace Program
 
 
                 }
-                if(line1_string.Trim() != ""  && line1.Trim() != "" && label1.Trim() != "")
+                if (line1.Trim() != "" && label1.Trim() != "")
                 {
-                    sw_string.WriteLine(line1_string);
+                    //sw_string.WriteLine(line1_string);
                     sw.WriteLine(line1.Trim());
                     sw_label.WriteLine(label1.Trim());
                     sw.Flush();
                     sw_label.Flush();
                 }
-               
+
 
             }
             sw.Close();
             sw_label.Close();
+            sw_string.Close();
 
         }
 
 
 
 
-        public static void tonumberdatabackground(string read1path, string wirtedatapath, string writetagpath)
+        public static void tonumberdatabackground(string read1path, string wirtedatapath, string writetagpath, string writerawpath)
         {
             StreamReader sr = new StreamReader(read1path, Encoding.UTF8);
             StreamWriter sw = new StreamWriter(wirtedatapath);
-
+            StreamWriter sw_string = new StreamWriter(writerawpath);
             StreamWriter sw_label = new StreamWriter(writetagpath);
 
             string line;
+
+
 
             char[] words;
             while ((line = sr.ReadLine()) != null)
@@ -174,6 +198,23 @@ namespace Program
                 {
                     continue;
                 }
+                string line_string = "";
+                //string line_raw = line;
+                foreach (char sword1 in line.Trim())
+                {
+                    if ((sword1 + " ").Trim() == " " || (sword1 + " ").Trim() == "")
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        line_string += sword1;
+                    }
+                }
+                sw_string.WriteLine(line_string);
+
+
+
                 line = ToSBC(line);
                 String s1 = Regex.Replace(line, "([A-Za-z] )+|[A-Za-z]+", "e");
                 String s2 = Regex.Replace(s1, "\\d+|(\\d )+", "d");
@@ -182,6 +223,7 @@ namespace Program
                 words = s2.ToCharArray();
                 string label1 = "";
                 int index = 0;
+                int i = 0;
                 foreach (char sword1 in words)
                 {
                     string sword = sword1 + "";
@@ -194,6 +236,7 @@ namespace Program
                     {
                         if ((c + " ").Trim() == "")
                         {
+
                             continue;
                         }
                         line1 += (lookup(c + "") + " ");
@@ -221,6 +264,7 @@ namespace Program
                             index++;
                             continue;
                         }
+                        i++;
 
 
 
@@ -233,10 +277,13 @@ namespace Program
                 sw_label.WriteLine(label1.Trim());
                 sw.Flush();
                 sw_label.Flush();
+                sw_string.Flush();
+
 
             }
             sw.Close();
             sw_label.Close();
+            sw_string.Close();
 
         }
 

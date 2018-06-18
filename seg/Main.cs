@@ -70,7 +70,7 @@ namespace Seg
                 System.IO.Directory.CreateDirectory("model/crf");
             }
 
-            if (Global.code == "soft")
+            if (Global.code == "fast")
             {
 
                 if (Global.mode == "train")
@@ -90,7 +90,7 @@ namespace Seg
 
                 Program1.MainClass.Run();
             }
-            else if (Global.code == "hard")
+            else if (Global.code == "heavy")
             {
 
                 if (Global.mode == "train")

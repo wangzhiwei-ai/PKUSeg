@@ -20,9 +20,9 @@ namespace Program
             {
                 Console.WriteLine("begain testing......");
                 testAccuracy1 = runtestIteration(X.Testing, false);
-                Console.WriteLine("Epoch test  f-score: {0}", (testAccuracy1 * 100).ToString("f3"));
+                //Console.WriteLine("Epoch test  f-score: {0}", (testAccuracy1 * 100).ToString("f3"));
                 //Console.WriteLine("Epoch test  best f-score: {0}", (testAccuracy * 100).ToString("f3"));
-                Global.swLog.WriteLine("Epoch test fscore: {0}", (testAccuracy1 * 100).ToString("f3"));
+                //Global.swLog.WriteLine("Epoch test fscore: {0}", (testAccuracy1 * 100).ToString("f3"));
                 //Global.swLog.WriteLine("Epoch test best fscore: {0}", (testAccuracy * 100).ToString("f3"));
                 Postprocessing.transfer("data/temp/" +  "test_raw.txt");
 

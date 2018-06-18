@@ -158,7 +158,7 @@ namespace Program1
             {
                 string[] ary = sortList[i].Split(Global.blankAry);
                 featureIndexMap[ary[0]] = i;
-                swFeat.WriteLine("{0} {1}", ary[0], i);
+                swFeat.WriteLine("{0} {1}", ary[0].Trim(), i);
             }
             swFeat.Close();
 

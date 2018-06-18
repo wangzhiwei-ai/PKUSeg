@@ -300,7 +300,7 @@ namespace Program1
                         write_string += raw[i] + "";
                     }
                 }
-                sw.WriteLine(write_string);
+                sw.WriteLine(write_string.Trim());
             }
             sw.Close();
             outputtag.Close();

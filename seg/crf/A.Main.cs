@@ -36,13 +36,13 @@ namespace Program1
             }
             //Directory.Delete(directoryPath);    //删除空文件夹
         }
- 
-     
 
-      
+
+
+
         public static void Run()
         {
-            
+
             Stopwatch timer = new Stopwatch();
             timer.Start();
 
@@ -50,38 +50,38 @@ namespace Program1
             {
                 Feature.Program2.processTrain(Global.trainFile);
                 Feature.Program2.processTest(Global.testFile);
-                
+
             }
             else
             {
                 Feature.Program2.processTest(Global.readFile);
-            
+
             }
 
-            timer.Stop();
-            Console.WriteLine ("get dataset " + timer.Elapsed);
+            //timer.Stop();
+            //Console.WriteLine ("get dataset " + timer.Elapsed);
 
-            timer.Restart();
+            //timer.Restart();
             if (Global.formatConvert)
             {
                 dataFormat df = new dataFormat();
                 df.convert();
             }
-            timer.Stop();
-            Console.WriteLine("get feature " + timer.Elapsed);
-            timer.Restart();
+            //timer.Stop();
+            //Console.WriteLine("get feature " + timer.Elapsed);
+            //timer.Restart();
 
             //Console.WriteLine("CRF-ADF toolkit");
             //Console.WriteLine("Copyright(C) Xu Sun <xusun@pku.edu.cn>, All rights reserved.");
 
             Global.globalCheck();//should check after readCommand()
             directoryCheck();
-        
+
             Global.swLog = new StreamWriter(Global.outDir + Global.fLog);//to record the most detailed runing info
             Global.swResRaw = new StreamWriter(Global.outDir + Global.fResRaw);//to record raw results
             Global.swTune = new StreamWriter(Global.outDir + Global.fTune);//to record tuning info
 
-            
+
             Global.printGlobals();
 
             if (Global.runMode.Contains("tune"))
@@ -104,14 +104,21 @@ namespace Program1
                 //Console.WriteLine("\nstart test...");
                 Global.swLog.WriteLine("\nstart testing...");
                 if (Global.runMode.Contains("rich"))
+                {
                     richEdge.test();//with rich edge feature: more accurate but slower
+                    ProcessData.tocrfoutput(Global.outFolder + "/outputTag.txt", Global.outputFile, Global.tempFile + "/" + "test.raw.txt");
+                    //timer.Stop();
+                    //Console.WriteLine("test" + timer.Elapsed);
+
+                }
+
                 else
                 {
                     test();//normal test
                     ProcessData.tocrfoutput(Global.outFolder + "/outputTag.txt", Global.outputFile, Global.tempFile + "/" + "test.raw.txt");
-                    timer.Stop();
-                    Console.WriteLine("test" + timer.Elapsed);
-                    Console.ReadLine();
+                    //timer.Stop();
+                    //Console.WriteLine("test" + timer.Elapsed);
+
                 }
 
             }
@@ -125,21 +132,27 @@ namespace Program1
 
             timer.Stop();
             double time = timer.ElapsedMilliseconds / 1000.0;
-            //Console.WriteLine("\ndone. run time (sec): " + time.ToString());
+            Console.WriteLine("\ndone. run time (sec): " + time.ToString());
             Global.swLog.WriteLine("\ndone. run time (sec): " + time.ToString());
 
             Global.swLog.Close();
             Global.swResRaw.Close();
             Global.swTune.Close();
 
-            resSummarize.summarize();//summarize results
+            if (Global.runMode == "train")
+            {
+                resSummarize.summarize();//summarize results
+            }
 
-           
+
+
+
             Global.swOutput.Close();
             //Console.ReadLine();
             //ClearDirectory(Global.tempFile);
             Console.WriteLine("finised.");
             //Console.ReadLine();
+            Console.ReadLine();
         }
 
         static double train()
@@ -180,16 +193,16 @@ namespace Program1
                 toolbox tb = new toolbox(X, true);
                 score = basicTrain(XX, tb);
                 resSummarize.write();//summarize the results & output the summarized results
-                
+
                 if (Global.save == 1)
                     tb.Model.save(Global.fModel);//save model as a .txt file
             }
             return score;
         }
-       
+
         static double test()
         {
-            
+
             Console.WriteLine("reading test data...");
             Global.swLog.WriteLine("reading test data...");
             dataSet XX = new dataSet(Global.fFeatureTest, Global.fGoldTest);
@@ -284,7 +297,7 @@ namespace Program1
 
         //    return chunk;
         //}
-               
+
         static void crossValidation()
         {
             //load data
@@ -317,7 +330,7 @@ namespace Program1
                         toolbox tb = new toolbox(Xi);
                         basicTrain(XXList[i], tb);
                     }
-          
+
                     resSummarize.write();
                     if (Global.rawResWrite) Global.swResRaw.WriteLine();
                 }
@@ -427,7 +440,7 @@ namespace Program1
                     double err = tb.train();
 
                     timer.Stop();
-                    double time = timer.ElapsedMilliseconds/1000.0;
+                    double time = timer.ElapsedMilliseconds / 1000.0;
 
                     Global.timeList.Add(time);
                     Global.errList.Add(err);
@@ -443,7 +456,7 @@ namespace Program1
                     Console.WriteLine("iter{0}  diff={1}  train-time(sec)={2}  {3}={4}%", Global.glbIter, Global.diff.ToString("e2"), time.ToString("f2"), Global.metric, score.ToString("f2"));
 
                     //if (Global.diff < Global.convergeTol)
-                        //break;
+                    //break;
                 }
             }
             return score;

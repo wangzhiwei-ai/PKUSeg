@@ -44,7 +44,7 @@ namespace Program
             if (Global.mode == "test")
             {
                 preprocess.readword();
-                preprocess.tonumberdatabackground(Global.readFile, "data/temp/" + "test_data.txt", "data/temp/" + "test_tag.txt");
+                preprocess.tonumberdatabackground(Global.readFile, "data/temp/" + "test_data.txt", "data/temp/" + "test_tag.txt", "data/temp/" + "test_raw.txt");
                 //preprocess.tonumberdata(Global.readFile, "data /temp/" + "_data", "data/temp/" + "_tag", "data/temp/" + "_raw");
                 readTestData("data/temp/" + "test_data.txt", "data/temp/" + "test_tag.txt");
             }

@@ -48,6 +48,11 @@ namespace Program
 
             Global.randn = new Normal();
             DataSet X = new DataSet();
+
+            if (Global.mode == "train")
+            {
+                Global.isRead = 0;
+            }
             if (Global.isRead == 1)
             {
                 string path = "model//deepNetwork";            

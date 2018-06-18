@@ -69,7 +69,7 @@ namespace Program1
                 string I_end = "I_end";
                 string B_single = "B_single";
 
-                StreamReader sr2 = new StreamReader(testFile);
+                StreamReader sr2 = new StreamReader(testFile, Encoding.UTF8);
                 StreamWriter sw2 = new StreamWriter(outFile, false, Encoding.UTF8);
                 StreamWriter sw3 = new StreamWriter(rawText, false, Encoding.UTF8);
                 string txt = sr2.ReadToEnd();
@@ -87,6 +87,10 @@ namespace Program1
                         int position = 0;
                         foreach (char c in cAry) //for each char
                         {
+                            if ((c + " ").Trim() == "")
+                            {
+                                continue;
+                            }
                             string sc = keywordTransfer(c + "");
                             sw3.Write(sc);
                             if (w.Length == 1)
@@ -287,6 +291,10 @@ namespace Program1
                         int position = 0;
                         foreach (char c in cAry) //for each char
                         {
+                            if ((c + " ").Trim() == "")
+                            {
+                                continue;
+                            }
                             string sc = keywordTransfer(c + "");
                             if (w.Length == 1)
                             {
