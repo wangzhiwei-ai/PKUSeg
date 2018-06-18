@@ -35,7 +35,7 @@ LancoSegси╠╠╬╘╢Ся╖╪фкЦсОяткЫ-сОят╪фкЦсК╩ЗфВя╖о╟яп╬©вИяпжфмфЁЖ╣др╩лвх╚пб╣джпнд╥ж╢
 	mono seg.exe train fast data/train.txt data/test.txt 		   ╦Ы╬щж╦╤╗╣дя╣а╥нд╪Чвт╤╗рЕя╣а╥ё╛я╣а╥дёпм╩А╠ё╢Ф╣╫seg/bin/x64/Release/modelд©б╪об
 	
 ### т╓я╣а╥дёпм
-╥ж╢йдёй╫обё╛сц╩╖пХр╙тзseg/bin/x64/Release/model╪стьт╓я╣а╥╨ц╣дйЩ╬щё╛йЩ╬щ©ирттзhttps://drive.google.com/drive/folders/1X7Yfmfiakgt7DYE86IEFT1wZdrEhOasy мЬж╥обтьё╛╦Ы╬щ╬ълЕпХр╙ё╛сц╩╖©иртвт╤╗рЕ╣дя║тЯ╡╩м╛╣дт╓я╣а╥дёпмё╛ртобйг╤т╡╩м╛дёпм╣дк╣цВё╨
+    ╥ж╢йдёй╫обё╛сц╩╖пХр╙тзseg/bin/x64/Release/model╪стьт╓я╣а╥╨ц╣дйЩ╬щё╛йЩ╬щ©ирттзhttps://drive.google.com/drive/folders/1X7Yfmfiakgt7DYE86IEFT1wZdrEhOasy мЬж╥обтьё╛╦Ы╬щ╬ълЕпХр╙ё╛сц╩╖©иртвт╤╗рЕ╣дя║тЯ╡╩м╛╣дт╓я╣а╥дёпмё╛ртобйг╤т╡╩м╛дёпм╣дк╣цВё╨
     msra_fastё╨fastдёй╫обё╛тзMSRAё╗пбнесОаоё╘иоя╣а╥╣ддёпм
     msr_heavyё╨heavyдёй╫обё╛тзMSRAё╗пбнесОаоё╘иоя╣а╥╣ддёпм
     ctb_fastё╨ fastдёй╫обё╛тзCTB8ё╗пбненд╠╬╪╟мЬбГнд╠╬╣д╩Л╨опмсОаоё╘иоя╣а╥╣ддёпм
