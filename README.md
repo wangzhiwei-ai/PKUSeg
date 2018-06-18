@@ -35,7 +35,7 @@ LancoSegÓÉ±±¾©´óÑ§¼ÆËãÓïÑÔËù-ÓïÑÔ¼ÆËãÓë»úÆ÷Ñ§Ï°ÑĞ¾¿×éÑĞÖÆÍÆ³öµÄÒ»Ì×È«ĞÂµÄÖĞÎÄ·Ö´
 	mono seg.exe train fast data/train.txt data/test.txt 		   ¸ù¾İÖ¸¶¨µÄÑµÁ·ÎÄ¼ş×Ô¶¨ÒåÑµÁ·£¬ÑµÁ·Ä£ĞÍ»á±£´æµ½seg/bin/x64/Release/modelÄ¿Â¼ÏÂ
 	
 ### Ô¤ÑµÁ·Ä£ĞÍ
-·Ö´ÊÄ£Ê½ÏÂ£¬ÓÃ»§ĞèÒªÔÚseg/bin/x64/Release/model¼ÓÔØÔ¤ÑµÁ·ºÃµÄÊı¾İ£¬Êı¾İ¿ÉÒÔÔÚhttps://drive.google.com/drive/folders/1X7Yfmfiakgt7DYE86IEFT1wZdrEhOasyÍøÖ·ÏÂÔØ£¬¸ù¾İ¾ßÌåĞèÒª£¬ÓÃ»§¿ÉÒÔ×Ô¶¨ÒåµÄÑ¡Ôñ²»Í¬µÄÔ¤ÑµÁ·Ä£ĞÍ£¬ÒÔÏÂÊÇ¶Ô²»Í¬Ä£ĞÍµÄËµÃ÷£º
+·Ö´ÊÄ£Ê½ÏÂ£¬ÓÃ»§ĞèÒªÔÚseg/bin/x64/Release/model¼ÓÔØÔ¤ÑµÁ·ºÃµÄÊı¾İ£¬Êı¾İ¿ÉÒÔÔÚhttps://drive.google.com/drive/folders/1X7Yfmfiakgt7DYE86IEFT1wZdrEhOasy ÍøÖ·ÏÂÔØ£¬¸ù¾İ¾ßÌåĞèÒª£¬ÓÃ»§¿ÉÒÔ×Ô¶¨ÒåµÄÑ¡Ôñ²»Í¬µÄÔ¤ÑµÁ·Ä£ĞÍ£¬ÒÔÏÂÊÇ¶Ô²»Í¬Ä£ĞÍµÄËµÃ÷£º
     * msra_fast£ºfastÄ£Ê½ÏÂ£¬ÔÚMSRA£¨ĞÂÎÅÓïÁÏ£©ÉÏÑµÁ·µÄÄ£ĞÍ
     * msr_heavy£ºheavyÄ£Ê½ÏÂ£¬ÔÚMSRA£¨ĞÂÎÅÓïÁÏ£©ÉÏÑµÁ·µÄÄ£ĞÍ
     * ctb_fast£º fastÄ£Ê½ÏÂ£¬ÔÚCTB8£¨ĞÂÎÅÎÄ±¾¼°ÍøÂçÎÄ±¾µÄ»ìºÏĞÍÓïÁÏ£©ÉÏÑµÁ·µÄÄ£ĞÍ
@@ -43,7 +43,7 @@ LancoSegÓÉ±±¾©´óÑ§¼ÆËãÓïÑÔËù-ÓïÑÔ¼ÆËãÓë»úÆ÷Ñ§Ï°ÑĞ¾¿×éÑĞÖÆÍÆ³öµÄÒ»Ì×È«ĞÂµÄÖĞÎÄ·Ö´
     * weibo_fast£ºfastÄ£Ê½ÏÂ£¬ÔÚÎ¢²©£¨ÍøÂçÎÄ±¾ÓïÁÏ£©ÉÏÑµÁ·µÄÄ£ĞÍ
     * weibo_heavy£ºheavyÄ£Ê½ÏÂ£¬ÔÚÎ¢²©£¨ÍøÂçÎÄ±¾ÓïÁÏ£©ÉÏÑµÁ·µÄÄ£ĞÍ
     
-ÈôÊ¹ÓÃfastÄ£Ê½£¬ÇëÏÂÔØÒÔfastÎªºó×º½áÎ²µÄÄ£ĞÍ£»ÈôÊ¹ÓÃheavyÄ£Ê½£¬ÇëÏÂÔØÒÔheavyÎªºó×ºµÄÄ£ĞÍ¡£msraÊı¾İÓÉµÚ¶ş½ì¹ú¼ÊººÓï·Ö´ÊÆÀ²â±ÈÈüÌá¹©£¨http://sighan.cs.uchicago.edu/bakeoff2005/£©£¬ctb8ÓÉLDCÌá¹©£¨https://catalog.ldc.upenn.edu/ldc2013t21£©£¬weiboÊı¾İÓÉNLPCC·Ö´Ê±ÈÈüÌá¹©£¨http://tcci.ccf.org.cn/conference/2016/pages/page05_CFPTasks.html£©¡£
+ÈôÊ¹ÓÃfastÄ£Ê½£¬ÇëÏÂÔØÒÔfastÎªºó×º½áÎ²µÄÄ£ĞÍ£»ÈôÊ¹ÓÃheavyÄ£Ê½£¬ÇëÏÂÔØÒÔheavyÎªºó×ºµÄÄ£ĞÍ¡£msraÊı¾İÓÉµÚ¶ş½ì¹ú¼ÊººÓï·Ö´ÊÆÀ²â±ÈÈüÌá¹©£¨http://sighan.cs.uchicago.edu/bakeoff2005/ £©£¬ctb8ÓÉLDCÌá¹©£¨https://catalog.ldc.upenn.edu/ldc2013t21   £©£¬weiboÊı¾İÓÉNLPCC·Ö´Ê±ÈÈüÌá¹©£¨http://tcci.ccf.org.cn/conference/2016/pages/page05_CFPTasks.html £©¡£
 
 
 ## ´ú±í·Ö´ÊÈí¼şµÄĞÔÄÜ¶Ô±È
@@ -51,17 +51,17 @@ LancoSegÓÉ±±¾©´óÑ§¼ÆËãÓïÑÔËù-ÓïÑÔ¼ÆËãÓë»úÆ÷Ñ§Ï°ÑĞ¾¿×éÑĞÖÆÍÆ³öµÄÒ»Ì×È«ĞÂµÄÖĞÎÄ·Ö´
 
 MSRA
 
-|Algorithm | Time | F-score
-|:------------|-------:|
-|jieba|0.82s|81.45
-|THULAC|7.12s|85.48
-|LancoSeg-fast|16.12s|96.86
-|LancoSeg-heavy|83.01s|96.75
+|Algorithm | Time | F-score|
+|:------------|-------:|------------:|
+| jieba | 0.82s |81.45 |
+| THULAC | 7.12s | 85.48 |
+| LancoSeg-fast | 16.12s | 96.86 |
+| LancoSeg-heavy | 83.01s | 96.75 |
 
 CTB8
 
 |Algorithm | Time | F-score
-|:------------|-------:|
+|:------------|-------:|------------:|
 |jieba|1.29s|79.58
 |THULAC|5.15s|87.77
 |LancoSeg-fast|10.69s|95.64
