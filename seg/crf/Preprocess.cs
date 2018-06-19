@@ -276,8 +276,8 @@ namespace Program1
             tag_file.Close();
 
             StreamReader outputtag = new StreamReader(readpath, Encoding.UTF8);
-            StreamWriter sw = new StreamWriter(wirtedatapath);
-            StreamReader rawtext = new StreamReader(rawdatdapath);
+            StreamWriter sw = new StreamWriter(wirtedatapath, false, Encoding.UTF8);
+            StreamReader rawtext = new StreamReader(rawdatdapath,Encoding.UTF8);
             string line;
             string[] linetag;
 

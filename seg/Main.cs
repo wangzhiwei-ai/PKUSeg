@@ -10,37 +10,38 @@ namespace Seg
     {
         static void Main(string[] args)
         {
+            for (int i = 0; i < args.Length; i++)
+            {
+                Console.WriteLine(args[i]);
+            }
             if (args.Length < 3)
             {
                 Console.WriteLine("Wrong  inputs");
                 Console.ReadLine();
                 return;
             }
+            
             else
             {
-                if (!System.IO.File.Exists(args[1]))
-                {
-                    Console.WriteLine("Wrong  inputs");
-                    Console.ReadLine();
-                    return;
-                }
                 if (!System.IO.File.Exists(args[2]))
                 {
-                    Console.WriteLine("Wrong  inputs");
+                    Console.WriteLine("file does not exist.");
                     Console.ReadLine();
                     return;
                 }
-                if (args[0] == "train")
+
+                Global.code = args[1];
+                if (args[1] == "train")
                 {
-                    Global.code = "train";
-                    Global.trainFile = args[1];
-                    Global.testFile = args[2];
+                    Global.mode = "train";
+                    Global.trainFile = args[2];
+                    Global.testFile = args[3];
                 }
                 else
                 {
-                    Global.code = "test";
-                    Global.readFile = args[1];
-                    Global.outputFile = args[2];
+                    Global.mode = "test";
+                    Global.readFile = args[2];
+                    Global.outputFile = args[3];
                 }
             }
             if (!System.IO.File.Exists("data"))
@@ -52,22 +53,22 @@ namespace Seg
                 System.IO.Directory.CreateDirectory("data/temp");
             }
 
-            if (!System.IO.File.Exists("data/deepNetwork"))
+            if (!System.IO.File.Exists("data/heavy"))
             {
-                System.IO.Directory.CreateDirectory("data/deepNetwork");
+                System.IO.Directory.CreateDirectory("data/heavy");
             }
 
             if (!System.IO.File.Exists("model"))
             {
                 System.IO.Directory.CreateDirectory("model");
             }
-            if (!System.IO.File.Exists("model/deepNetwork"))
+            if (!System.IO.File.Exists("model/heavy"))
             {
-                System.IO.Directory.CreateDirectory("model/deepNetwork");
+                System.IO.Directory.CreateDirectory("model/heavy");
             }
-            if (!System.IO.File.Exists("model/crf"))
+            if (!System.IO.File.Exists("model/fast"))
             {
-                System.IO.Directory.CreateDirectory("model/crf");
+                System.IO.Directory.CreateDirectory("model/fast");
             }
 
             if (Global.code == "fast")
@@ -78,7 +79,7 @@ namespace Seg
                     Program1.Global.runMode = "train";
                     Program1.Global.trainFile = Global.trainFile;
                     Program1.Global.testFile = Global.testFile;
-                    
+
                 }
                 else
                 {

@@ -18,7 +18,7 @@ namespace Program
         {
             if (Global.mode == "test")
             {
-                Console.WriteLine("begain testing......");
+                Console.WriteLine("begin testing......");
                 testAccuracy1 = runtestIteration(X.Testing, false);
                 //Console.WriteLine("Epoch test  f-score: {0}", (testAccuracy1 * 100).ToString("f3"));
                 //Console.WriteLine("Epoch test  best f-score: {0}", (testAccuracy * 100).ToString("f3"));
@@ -64,15 +64,15 @@ namespace Program
 
                     if (testAccuracy <= testAccuracy1)
                     {
-                        LSTMLayer.SerializeWordembedding("model//deepNetwork//embedding");
+                        LSTMLayer.SerializeWordembedding("model//heavy//embedding");
                         //LSTMLayer.SerializeBigramWordembedding();
-                        Global.upLSTMLayer.saveLSTM("model//deepNetwork//lstmmodel.txt");
-                        Global.upLSTMLayerr.saveLSTM("model//deepNetwork//lstmmodelr.txt");
-                        Global.GRNNLayer1.saveGRNN("model//deepNetwork//grnnmodel1.txt");
-                        Global.GRNNLayer2.saveGRNN("model//deepNetwork//grnnmodel1.txt");
-                        Global.GRNNLayer3.saveGRNN("model//deepNetwork//grnnmodel1.txt");
-                        Global.GRNNLayer4.saveGRNN("model//deepNetwork//grnnmodel1.txt");                        
-                        Global.feedForwardLayer.saveFFmodel("model//deepNetwork//feedforwardmodel.txt");
+                        Global.upLSTMLayer.saveLSTM("model//heavy//lstmmodel.txt");
+                        Global.upLSTMLayerr.saveLSTM("model//heavy//lstmmodelr.txt");
+                        Global.GRNNLayer1.saveGRNN("model//heavy//grnnmodel1.txt");
+                        Global.GRNNLayer2.saveGRNN("model//heavy//grnnmodel1.txt");
+                        Global.GRNNLayer3.saveGRNN("model//heavy//grnnmodel1.txt");
+                        Global.GRNNLayer4.saveGRNN("model//heavy//grnnmodel1.txt");                        
+                        Global.feedForwardLayer.saveFFmodel("model//heavy//feedforwardmodel.txt");
                         testAccuracy = testAccuracy1;
                     }
 
@@ -173,15 +173,15 @@ namespace Program
 
                      if (testAccuracy <= testAccuracy1)
                      {
-                        LSTMLayer.SerializeWordembedding("model//deepNetwork//embedding");
+                        LSTMLayer.SerializeWordembedding("model//heavy//embedding");
                         //LSTMLayer.SerializeBigramWordembedding();
-                        Global.upLSTMLayer.saveLSTM("model//deepNetwork//lstmmodel.txt");
-                        Global.upLSTMLayerr.saveLSTM("model//deepNetwork//lstmmodelr.txt");
-                        Global.GRNNLayer1.saveGRNN("model//deepNetwork//grnnmodel1.txt");
-                        Global.GRNNLayer2.saveGRNN("model//deepNetwork//grnnmodel1.txt");
-                        Global.GRNNLayer3.saveGRNN("model//deepNetwork//grnnmodel1.txt");
-                        Global.GRNNLayer4.saveGRNN("model//deepNetwork//grnnmodel1.txt");
-                        Global.feedForwardLayer.saveFFmodel("model//deepNetwork//feedforwardmodel.txt");
+                        Global.upLSTMLayer.saveLSTM("model//heavy//lstmmodel.txt");
+                        Global.upLSTMLayerr.saveLSTM("model//heavy//lstmmodelr.txt");
+                        Global.GRNNLayer1.saveGRNN("model//heavy//grnnmodel1.txt");
+                        Global.GRNNLayer2.saveGRNN("model//heavy//grnnmodel1.txt");
+                        Global.GRNNLayer3.saveGRNN("model//heavy//grnnmodel1.txt");
+                        Global.GRNNLayer4.saveGRNN("model//heavy//grnnmodel1.txt");
+                        Global.feedForwardLayer.saveFFmodel("model//heavy//feedforwardmodel.txt");
                         testAccuracy = testAccuracy1;
 
 

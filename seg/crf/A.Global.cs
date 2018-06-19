@@ -116,8 +116,8 @@ namespace Program1
 
 
         
-        public const string fModel = "model/crf/model.txt";
-        public const string modelDir = "model/crf/";
+        public const string fModel = "model/fast/model.txt";
+        public const string modelDir = "model/fast/";
         public static char[] lineEndAry = { '\n' };
         public static string[] biLineEndAry = { "\n\n" };
         public static string[] triLineEndAry = { "\n\n\n" };

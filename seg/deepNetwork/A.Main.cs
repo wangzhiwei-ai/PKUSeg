@@ -13,7 +13,7 @@ namespace Program
 
         static void readfourword()
         {
-            StreamReader sr = new StreamReader("data/deepNetwork/idoim.txt", Encoding.UTF8);
+            StreamReader sr = new StreamReader("data/heavy/idoim.txt", Encoding.UTF8);
             string line;
             while ((line = sr.ReadLine()) != null)
             {
@@ -25,7 +25,7 @@ namespace Program
 
         static void readword()
         {
-            StreamReader sr = new StreamReader("data/deepNetwork/word.txt", Encoding.Default);
+            StreamReader sr = new StreamReader("data/heavy/word.txt", Encoding.Default);
             string line;
             while ((line = sr.ReadLine()) != null)
             {
@@ -55,7 +55,7 @@ namespace Program
             }
             if (Global.isRead == 1)
             {
-                string path = "model//deepNetwork";            
+                string path = "model//heavy";            
 
                 Global.upLSTMLayer = LSTMLayer.readLSTM(path  + "//lstmmodel.txt");
                 Global.upLSTMLayerr = LSTMLayer.readLSTM(path  + "//lstmmodelr.txt");

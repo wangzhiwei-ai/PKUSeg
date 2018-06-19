@@ -29,7 +29,7 @@ namespace Program
         }
         public static void readword()
         {
-            StreamReader sr = new StreamReader("data/deepNetwork/word.txt", Encoding.Default);
+            StreamReader sr = new StreamReader("data/heavy/word.txt", Encoding.Default);
             string line; int i = 0;
             while ((line = sr.ReadLine()) != null)
             {
@@ -73,9 +73,9 @@ namespace Program
         public static void tonumberdata(string read1path, string wirtedatapath, string writetagpath, string writerawpath)
         {
             StreamReader sr = new StreamReader(read1path, Encoding.UTF8);
-            StreamWriter sw = new StreamWriter(wirtedatapath);
-            StreamWriter sw_string = new StreamWriter(writerawpath);
-            StreamWriter sw_label = new StreamWriter(writetagpath);
+            StreamWriter sw = new StreamWriter(wirtedatapath, false, Encoding.UTF8);
+            StreamWriter sw_string = new StreamWriter(writerawpath, false, Encoding.UTF8);
+            StreamWriter sw_label = new StreamWriter(writetagpath, false, Encoding.UTF8);
 
             string line;
 
@@ -183,9 +183,9 @@ namespace Program
         public static void tonumberdatabackground(string read1path, string wirtedatapath, string writetagpath, string writerawpath)
         {
             StreamReader sr = new StreamReader(read1path, Encoding.UTF8);
-            StreamWriter sw = new StreamWriter(wirtedatapath);
-            StreamWriter sw_string = new StreamWriter(writerawpath);
-            StreamWriter sw_label = new StreamWriter(writetagpath);
+            StreamWriter sw = new StreamWriter(wirtedatapath, false, Encoding.UTF8);
+            StreamWriter sw_string = new StreamWriter(writerawpath, false, Encoding.UTF8);
+            StreamWriter sw_label = new StreamWriter(writetagpath, false, Encoding.UTF8);
 
             string line;
 

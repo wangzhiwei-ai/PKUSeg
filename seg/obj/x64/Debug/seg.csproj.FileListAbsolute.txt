@@ -94,3 +94,13 @@ F:\github\word_seg\newner\obj\x64\Debug\seg.csproj.CoreCompileInputs.cache
 F:\github\word_seg\newner\obj\x64\Debug\seg.csproj.CopyComplete
 F:\github\word_seg\newner\obj\x64\Debug\LSTM.exe
 F:\github\word_seg\newner\obj\x64\Debug\LSTM.pdb
+F:\github\word_seg_\seg\bin\x64\Debug\LSTM.exe.config
+F:\github\word_seg_\seg\bin\x64\Debug\LSTM.exe
+F:\github\word_seg_\seg\bin\x64\Debug\LSTM.pdb
+F:\github\word_seg_\seg\bin\x64\Debug\MathNet.Numerics.dll
+F:\github\word_seg_\seg\bin\x64\Debug\MathNet.Numerics.xml
+F:\github\word_seg_\seg\obj\x64\Debug\seg.csprojResolveAssemblyReference.cache
+F:\github\word_seg_\seg\obj\x64\Debug\seg.csproj.CoreCompileInputs.cache
+F:\github\word_seg_\seg\obj\x64\Debug\seg.csproj.CopyComplete
+F:\github\word_seg_\seg\obj\x64\Debug\LSTM.exe
+F:\github\word_seg_\seg\obj\x64\Debug\LSTM.pdb

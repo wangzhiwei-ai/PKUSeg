@@ -68,7 +68,7 @@ namespace Program
 
         public void getwordembedding()
         {
-            StreamReader sr = new StreamReader("data/deepNetwork/vector.txt");
+            StreamReader sr = new StreamReader("data/heavy/vector.txt");
             String line; int j = 0;
             while ((line = sr.ReadLine()) != null)
             {
