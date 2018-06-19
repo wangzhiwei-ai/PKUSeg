@@ -18,8 +18,8 @@ LancoSegÓÉ±±¾©´óÑ§¼ÆËãÓïÑÔËù-ÓïÑÔ¼ÆËãÓë»úÆ÷Ñ§Ï°ÑĞ¾¿×éÑĞÖÆÍÆ³öµÄÒ»Ì×È«ĞÂµÄÖĞÎÄ·Ö´
 
 ## Ê¹ÓÃ·½Ê½
     * ÔËĞĞseg/bin/x64/ReleaseÄ¿Â¼ÏÂµÄseg.exe³ÌĞò£¬windowsÓÃ»§¿ÉÖ±½ÓÔÚcmd»·¾³ÏÂ£¬linux³ÌĞòÓÃ»§ĞèÒªµ÷ÓÃmonoÃüÁî¡£
-	* ·Ö´ÊÄ£Ê½£º[mono] seg.exe test [-mode] [-input file] [-output file]
-    * ÑµÁ·Ä£Ê½£º[mono] seg.exe train [-mode] [-train file] [-test file]
+	* ·Ö´ÊÄ£Ê½£º[mono] LSTM.exe test [-mode] [-input file] [-output file]
+    * ÑµÁ·Ä£Ê½£º[mono] LSTM.exe train [-mode] [-train file] [-test file]
     * ´ÓÎÄ±¾ÎÄ¼şÊäÈëÊä³ö£¨×¢Òâ¾ùÎªUTF8ÎÄ±¾£©
 ### ²ÎÊıËµÃ÷
     test  ·Ö´Ê
@@ -30,9 +30,9 @@ LancoSegÓÉ±±¾©´óÑ§¼ÆËãÓïÑÔËù-ÓïÑÔ¼ÆËãÓë»úÆ÷Ñ§Ï°ÑĞ¾¿×éÑĞÖÆÍÆ³öµÄÒ»Ì×È«ĞÂµÄÖĞÎÄ·Ö´
     [-trainFile] & [-testFile] ÓÃ»§±ê×¢µÄÑµÁ·ÓïÁÏ£¬¾ä×ÓÖ®¼äÒÔ»»ĞĞ·û·Ö¸ô£¬´ÊÓïÖ®¼äÒÔ¿Õ¸ñ·Ö¸ô
     
 ### ÔËĞĞÑùÀı
-	mono seg.exe test fast data/input.txt data/output.txt 			linux»·¾³ÏÂ£¬ÒÔfastÄ£ĞÍ½øĞĞ·Ö´Ê
-    seg.exe test heavy data/input.txt data/output.txt           windows »·¾³ÏÂ£¬ÒÔheavyÄ£ĞÍ½øĞĞ·Ö´Ê
-	mono seg.exe train fast data/train.txt data/test.txt 		   ¸ù¾İÖ¸¶¨µÄÑµÁ·ÎÄ¼ş×Ô¶¨ÒåÑµÁ·£¬ÑµÁ·Ä£ĞÍ»á±£´æµ½seg/bin/x64/Release/modelÄ¿Â¼ÏÂ
+	mono LSTM.exe test fast data/input.txt data/output.txt 			linux»·¾³ÏÂ£¬ÒÔfastÄ£ĞÍ½øĞĞ·Ö´Ê
+    LSTM.exe test heavy data/input.txt data/output.txt           windows »·¾³ÏÂ£¬ÒÔheavyÄ£ĞÍ½øĞĞ·Ö´Ê
+	mono LSTM.exe train fast data/train.txt data/test.txt 		   ¸ù¾İÖ¸¶¨µÄÑµÁ·ÎÄ¼ş×Ô¶¨ÒåÑµÁ·£¬ÑµÁ·Ä£ĞÍ»á±£´æµ½seg/bin/x64/Release/modelÄ¿Â¼ÏÂ
 	
 ### Ô¤ÑµÁ·Ä£ĞÍ
     ·Ö´ÊÄ£Ê½ÏÂ£¬ÓÃ»§ĞèÒªÔÚseg/bin/x64/Release/model¼ÓÔØÔ¤ÑµÁ·ºÃµÄÊı¾İ£¬Êı¾İ¿ÉÒÔÔÚhttps://drive.google.com/drive/folders/1X7Yfmfiakgt7DYE86IEFT1wZdrEhOasy ÍøÖ·ÏÂÔØ£¬¸ù¾İ¾ßÌåĞèÒª£¬ÓÃ»§¿ÉÒÔ×Ô¶¨ÒåµÄÑ¡Ôñ²»Í¬µÄÔ¤ÑµÁ·Ä£ĞÍ£¬ÒÔÏÂÊÇ¶Ô²»Í¬Ä£ĞÍµÄËµÃ÷£º
