@@ -3,7 +3,7 @@ LancoSegÈÚºÏÁË×îÐÂµÄÉî¶ÈÑ§Ï°Ä£ÐÍºÍ´«Í³µÄcrfÄ£ÐÍ£¬ÐÔÄÜ¸ßÐ§£¬Ö§³Ö¶àÁìÓò·Ö´Ê¡£
 ## Ä¿Â¼
 * [ÏîÄ¿½éÉÜ](#ÏîÄ¿½éÉÜ)
 * [Ê¹ÓÃ·½Ê½](#Ê¹ÓÃ·½Ê½)
-* [¸÷Àà·Ö´ÊµÄÐÔÄÜ¶Ô±È](#¸÷Àà·Ö´ÊµÄÐÔÄÜ¶Ô±È)
+* [¸÷Àà·Ö´Ê¹¤¾ß°üµÄÐÔÄÜ¶Ô±È](#¸÷Àà·Ö´Ê¹¤¾ß°üµÄÐÔÄÜ¶Ô±È)
 * [Ïà¹ØÂÛÎÄ](#Ïà¹ØÂÛÎÄ)
 * [×÷Õß](#×÷Õß)
 
@@ -46,7 +46,7 @@ LancoSegÓÉ±±¾©´óÑ§¼ÆËãÓïÑÔËù-ÓïÑÔ¼ÆËãÓë»úÆ÷Ñ§Ï°ÑÐ¾¿×éÑÐÖÆÍÆ³öµÄÒ»Ì×È«ÐÂµÄÖÐÎÄ·Ö´
 ÈôÊ¹ÓÃfastÄ£Ê½£¬ÇëÏÂÔØÒÔfastÎªºó×º½áÎ²µÄÄ£ÐÍ£»ÈôÊ¹ÓÃheavyÄ£Ê½£¬ÇëÏÂÔØÒÔheavyÎªºó×ºµÄÄ£ÐÍ¡£MSRAÊý¾ÝÓÉµÚ¶þ½ì¹ú¼ÊººÓï·Ö´ÊÆÀ²â±ÈÈüÌá¹©£¨http://sighan.cs.uchicago.edu/bakeoff2005/ £©£¬CTB8ÓÉLDCÌá¹©£¨https://catalog.ldc.upenn.edu/ldc2013t21   £©£¬weiboÊý¾ÝÓÉNLPCC·Ö´Ê±ÈÈüÌá¹©£¨http://tcci.ccf.org.cn/conference/2016/pages/page05_CFPTasks.html £©¡£
 
 
-## ´ú±í·Ö´ÊÈí¼þµÄÐÔÄÜ¶Ô±È
+## ¸÷Àà·Ö´Ê¹¤¾ß°üµÄÐÔÄÜ¶Ô±È
 ÎÒÃÇÑ¡ÔñTHULAC¡¢½á°Í·Ö´ÊµÈ¹úÄÚ´ú±í·Ö´ÊÈí¼þÓëLancoSeg×öÐÔÄÜ±È½Ï¡£ÎÒÃÇÑ¡ÔñWindows×÷Îª²âÊÔ»·¾³£¬ÔÚÐÂÎÅÊý¾Ý(MSRA)ºÍ»ìºÏÐÍÎÄ±¾(CTB8)Êý¾ÝÉÏ¶Ô²»Í¬Èí¼þ½øÐÐÁËËÙ¶ÈºÍ×¼È·ÂÊ²âÊÔ¡£ÎÒÃÇÊ¹ÓÃÁËµÚ¶þ½ì¹ú¼ÊººÓï·Ö´ÊÆÀ²â±ÈÈüÌá¹©µÄ·Ö´ÊÆÀ¼Û½Å±¾¡£ÆÀ²â½á¹ûÈçÏÂ£º
 
 MSRA
