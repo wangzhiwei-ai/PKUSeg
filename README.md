@@ -35,15 +35,18 @@ LancoSegÓÉ±±¾©´óÑ§¼ÆËãÓïÑÔËù-ÓïÑÔ¼ÆËãÓë»úÆ÷Ñ§Ï°ÑĞ¾¿×éÑĞÖÆÍÆ³öµÄÒ»Ì×È«ĞÂµÄÖĞÎÄ·Ö´
 	mono LSTM.exe train fast data/train.txt data/test.txt 		   ¸ù¾İÖ¸¶¨µÄÑµÁ·ÎÄ¼ş×Ô¶¨ÒåÑµÁ·£¬ÑµÁ·Ä£ĞÍ»á±£´æµ½seg/bin/x64/Release/modelÄ¿Â¼ÏÂ
 	
 ### Ô¤ÑµÁ·Ä£ĞÍ
+·Ö´ÊÄ£Ê½ÏÂ£¬ÓÃ»§ĞèÒªÔÚseg/bin/x64/Release/model¼ÓÔØÔ¤ÑµÁ·ºÃµÄÄ£ĞÍ£¬Êı¾İ¿ÉÒÔÔÚhttps://drive.google.com/drive/folders/1X7Yfmfiakgt7DYE86IEFT1wZdrEhOasy ÍøÖ·ÏÂÔØ£¬¸ù¾İ¾ßÌåĞèÒª£¬ÓÃ»§¿ÉÒÔ×Ô¶¨ÒåµÄÑ¡Ôñ²»Í¬µÄÔ¤ÑµÁ·Ä£ĞÍ¡£ÒÔÏÂÊÇ¶ÔÄ£ĞÍµÄËµÃ÷£º
+
+```
     msra_fast£ºfastÄ£Ê½ÏÂ£¬ÔÚMSRA£¨ĞÂÎÅÓïÁÏ£©ÉÏÑµÁ·µÄÄ£ĞÍ
     msra_heavy£ºheavyÄ£Ê½ÏÂ£¬ÔÚMSRA£¨ĞÂÎÅÓïÁÏ£©ÉÏÑµÁ·µÄÄ£ĞÍ
     ctb8 _fast£º fastÄ£Ê½ÏÂ£¬ÔÚCTB8£¨ĞÂÎÅÎÄ±¾¼°ÍøÂçÎÄ±¾µÄ»ìºÏĞÍÓïÁÏ£©ÉÏÑµÁ·µÄÄ£ĞÍ
     ctb8_heavy£ºheavyÄ£Ê½ÏÂ£¬ÔÚCTB8£¨ĞÂÎÅÎÄ±¾¼°ÍøÂçÎÄ±¾µÄ»ìºÏĞÍÓïÁÏ£©ÉÏÑµÁ·µÄÄ£ĞÍ
     weibo_fast£ºfastÄ£Ê½ÏÂ£¬ÔÚÎ¢²©£¨ÍøÂçÎÄ±¾ÓïÁÏ£©ÉÏÑµÁ·µÄÄ£ĞÍ
     weibo_heavy£ºheavyÄ£Ê½ÏÂ£¬ÔÚÎ¢²©£¨ÍøÂçÎÄ±¾ÓïÁÏ£©ÉÏÑµÁ·µÄÄ£ĞÍ
-    
+    ```
 
-·Ö´ÊÄ£Ê½ÏÂ£¬ÓÃ»§ĞèÒªÔÚseg/bin/x64/Release/model¼ÓÔØÔ¤ÑµÁ·ºÃµÄÄ£ĞÍ£¬Êı¾İ¿ÉÒÔÔÚhttps://drive.google.com/drive/folders/1X7Yfmfiakgt7DYE86IEFT1wZdrEhOasy ÍøÖ·ÏÂÔØ£¬¸ù¾İ¾ßÌåĞèÒª£¬ÓÃ»§¿ÉÒÔ×Ô¶¨ÒåµÄÑ¡Ôñ²»Í¬µÄÔ¤ÑµÁ·Ä£ĞÍ¡£ 
+ 
 ÈôÊ¹ÓÃfastÄ£Ê½£¬ÇëÏÂÔØÒÔfastÎªºó×º½áÎ²µÄÄ£ĞÍ²¢½«ÎÄ¼ş¼ĞÏÂµÄÄÚÈİ·ÅÔÚseg/bin/x64/Release/model/fastÎÄ¼ş¼ĞÏÂ£»ÈôÊ¹ÓÃheavyÄ£Ê½£¬ÇëÏÂÔØÒÔheavyÎªºó×ºµÄÄ£ĞÍ²¢½«ÆäÄÚÈİ·ÅÔÚseg/bin/x64/Release/model/heavyÎÄ¼ş¼ĞÏÂ¡£´úÂëÖĞµÄÄ£ĞÍÎª²»ÍêÕûÄ£ĞÍ£¬½ö¹©²Î¿¼¡£ÆäÖĞMSRAÊı¾İÓÉµÚ¶ş½ì¹ú¼ÊººÓï·Ö´ÊÆÀ²â±ÈÈüÌá¹©£¨http://sighan.cs.uchicago.edu/bakeoff2005/ £©£¬CTB8ÓÉLDCÌá¹©£¨https://catalog.ldc.upenn.edu/ldc2013t21   £©£¬weiboÊı¾İÓÉNLPCC·Ö´Ê±ÈÈüÌá¹©£¨http://tcci.ccf.org.cn/conference/2016/pages/page05_CFPTasks.html £©¡£
 
 
