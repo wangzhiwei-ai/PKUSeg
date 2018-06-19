@@ -44,7 +44,7 @@ LancoSegÓÉ±±¾©´óÑ§¼ÆËãÓïÑÔËù-ÓïÑÔ¼ÆËãÓë»úÆ÷Ñ§Ï°ÑĞ¾¿×éÑĞÖÆÍÆ³öµÄÒ»Ì×È«ĞÂµÄÖĞÎÄ·Ö´
     ctb8_heavy£ºheavyÄ£Ê½ÏÂ£¬ÔÚCTB8£¨ĞÂÎÅÎÄ±¾¼°ÍøÂçÎÄ±¾µÄ»ìºÏĞÍÓïÁÏ£©ÉÏÑµÁ·µÄÄ£ĞÍ
     weibo_fast£ºfastÄ£Ê½ÏÂ£¬ÔÚÎ¢²©£¨ÍøÂçÎÄ±¾ÓïÁÏ£©ÉÏÑµÁ·µÄÄ£ĞÍ
     weibo_heavy£ºheavyÄ£Ê½ÏÂ£¬ÔÚÎ¢²©£¨ÍøÂçÎÄ±¾ÓïÁÏ£©ÉÏÑµÁ·µÄÄ£ĞÍ
-    ```
+```
 
  
 ÈôÊ¹ÓÃfastÄ£Ê½£¬ÇëÏÂÔØÒÔfastÎªºó×º½áÎ²µÄÄ£ĞÍ²¢½«ÎÄ¼ş¼ĞÏÂµÄÄÚÈİ·ÅÔÚseg/bin/x64/Release/model/fastÎÄ¼ş¼ĞÏÂ£»ÈôÊ¹ÓÃheavyÄ£Ê½£¬ÇëÏÂÔØÒÔheavyÎªºó×ºµÄÄ£ĞÍ²¢½«ÆäÄÚÈİ·ÅÔÚseg/bin/x64/Release/model/heavyÎÄ¼ş¼ĞÏÂ¡£´úÂëÖĞµÄÄ£ĞÍÎª²»ÍêÕûÄ£ĞÍ£¬½ö¹©²Î¿¼¡£ÆäÖĞMSRAÊı¾İÓÉµÚ¶ş½ì¹ú¼ÊººÓï·Ö´ÊÆÀ²â±ÈÈüÌá¹©£¨http://sighan.cs.uchicago.edu/bakeoff2005/ £©£¬CTB8ÓÉLDCÌá¹©£¨https://catalog.ldc.upenn.edu/ldc2013t21   £©£¬weiboÊı¾İÓÉNLPCC·Ö´Ê±ÈÈüÌá¹©£¨http://tcci.ccf.org.cn/conference/2016/pages/page05_CFPTasks.html £©¡£
