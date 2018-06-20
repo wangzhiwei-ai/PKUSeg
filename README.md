@@ -1,5 +1,5 @@
 # PKUSeg：一个高准确度的中文分词工具包
-相比于其他的分词软件，PKUSeg简单易用，支持多领域分词，在不同领域的数据上都大幅提高了分词的准确率。
+PKUSeg简单易用，支持多领域分词，在不同领域的数据上都大幅提高了分词的准确率。
 ## 目录
 * [项目介绍](#项目介绍)
 * [使用方式](#使用方式)
@@ -30,7 +30,7 @@ PKUSeg由北京大学语言计算与机器学习研究组研制推出的一套全新的中文分词工具包。PKUS
 ### 运行样例
 	mono LSTM.exe test data/input.txt data/output.txt 		linux环境下进行分词
     LSTM.exe test data/input.txt data/output.txt 		windows 环境下进行分词
-	mono LSTM.exe train data/train.txt data/test.txt 		   根据指定的训练文件自定义训练，训练模型会保存到seg/bin/x64/Release/model目录下
+	mono LSTM.exe train data/train.txt data/test.txt 		根据指定的训练文件自定义训练，训练模型会保存到seg/bin/x64/Release/model目录下
 	
 ### 预训练模型
 分词模式下，用户需要在seg/bin/x64/Release/model/fast加载预训练好的模型，数据可以在https://drive.google.com/drive/folders/1X7Yfmfiakgt7DYE86IEFT1wZdrEhOasy 网址下载，根据具体需要，用户可以自定义的选择不同的预训练模型。以下是对模型的说明：
