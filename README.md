@@ -33,7 +33,7 @@ PKUSeg由北京大学语言计算与机器学习研究组研制推出的一套全新的中文分词工具包。PKUS
 	mono LSTM.exe train data/train.txt data/test.txt 		根据指定的训练文件自定义训练，训练模型会保存到seg/bin/x64/Release/model目录下
 	
 ### 预训练模型
-分词模式下，用户需要在seg/bin/x64/Release/model/fast加载预训练好的模型，数据可以在https://drive.google.com/open?id=1BxFoqHtieVzLnjOt1xfya6wR-voSUhA网址下载，根据具体需要，用户可以自定义的选择不同的预训练模型。以下是对模型的说明：
+分词模式下，用户需要在seg/bin/x64/Release/model/fast加载预训练好的模型，数据可以在https://drive.google.com/open?id=1BxFoqHtieVzLnjOt1xfya6wR-voSUhA 网址下载，根据具体需要，用户可以自定义的选择不同的预训练模型。以下是对模型的说明：
 
 ```
 msra：在MSRA（新闻语料）上训练的模型
