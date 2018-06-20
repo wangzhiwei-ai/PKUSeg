@@ -1,5 +1,5 @@
 # PKUSeg：一个高准确度的中文分词工具包
-相比于其他的分词软件，PKUSeg大幅提高了分词的准确率。
+相比于其他的分词软件，PKUSeg简单易用，支持多领域分词，在不同领域的数据上都大幅提高了分词的准确率。
 ## 目录
 * [项目介绍](#项目介绍)
 * [使用方式](#使用方式)
@@ -28,8 +28,8 @@ PKUSeg由北京大学语言计算与机器学习研究组研制推出的一套全新的中文分词工具包。PKUS
     [-trainFile] & [-testFile] 用户标注的训练语料，句子之间以换行符分隔，词语之间以空格分隔
     
 ### 运行样例
-	mono LSTM.exe test data/input.txt data/output.txt 			linux环境下进行分词
-    LSTM.exe test data/input.txt data/output.txt           windows 环境下进行分词
+	mono LSTM.exe test data/input.txt data/output.txt 		linux环境下进行分词
+    LSTM.exe test data/input.txt data/output.txt 		windows 环境下进行分词
 	mono LSTM.exe train data/train.txt data/test.txt 		   根据指定的训练文件自定义训练，训练模型会保存到seg/bin/x64/Release/model目录下
 	
 ### 预训练模型
@@ -72,16 +72,14 @@ CTB8
 * Jingjing Xu, Xu Sun. Dependency-based Gated Recursive Neural Network for Chinese Word Segmentation. ACL 2016: 567-572
 
 若使用此工具包，请引用如下文章：
-
+```
 @inproceedings{DBLP:conf/acl/SunWL12,
 author = {Xu Sun and
 Houfeng Wang and
 Wenjie Li},
 title = {Fast Online Training with Frequency-Adaptive Learning Rates for Chinese
 Word Segmentation and New Word Detection},
-booktitle = {The 50th Annual Meeting of the.pdf Association for Computational Linguistics,
-Proceedings of the Conference, July 8-14, 2012, Jeju Island, Korea
-- Volume 1: Long Papers},
+booktitle = {The 50th Annual Meeting of the.pdf Association for Computational Linguistics, Proceedings of the Conference, July 8-14, 2012, Jeju Island, Korea- Volume 1: Long Papers},
 pages = {253--262},
 year = {2012}}
 
@@ -92,6 +90,7 @@ booktitle = {Proceedings of the 54th Annual Meeting of the Association for Compu
 Linguistics, {ACL} 2016, August 7-12, 2016, Berlin, Germany, Volume
 2: Short Papers},
 year = {2016}}
+```
 ## 作者
 
 Xu Sun （孙栩，导师）,  Jingjing Xu（许晶晶，博士生）
