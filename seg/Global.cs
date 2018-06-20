@@ -11,7 +11,7 @@ namespace Seg
 
 
         public static string mode = "train";//  "train" or "test" or "predict";
-        public static string code = "hard";
+        public static string code = "fast";
 
 
         // test mode

@@ -67,9 +67,7 @@ namespace Program1
                 dataFormat df = new dataFormat();
                 df.convert();
             }
-            //timer.Stop();
-            //Console.WriteLine("get feature " + timer.Elapsed);
-            //timer.Restart();
+            
 
             //Console.WriteLine("CRF-ADF toolkit");
             //Console.WriteLine("Copyright(C) Xu Sun <xusun@pku.edu.cn>, All rights reserved.");
@@ -81,8 +79,10 @@ namespace Program1
             Global.swResRaw = new StreamWriter(Global.outDir + Global.fResRaw);//to record raw results
             Global.swTune = new StreamWriter(Global.outDir + Global.fTune);//to record tuning info
 
-
-            Global.printGlobals();
+            //timer.Stop();
+            //Console.WriteLine("get feature " + timer.Elapsed);
+            //timer.Restart();
+            //Global.printGlobals();
 
             if (Global.runMode.Contains("tune"))
             {
@@ -115,10 +115,10 @@ namespace Program1
                 else
                 {
                     test();//normal test
+                    timer.Stop();
+                    Console.WriteLine("test" + timer.Elapsed);
                     ProcessData.tocrfoutput(Global.outFolder + "/outputTag.txt", Global.outputFile, Global.tempFile + "/" + "test.raw.txt");
-                    //timer.Stop();
-                    //Console.WriteLine("test" + timer.Elapsed);
-
+                  
                 }
 
             }
@@ -200,7 +200,7 @@ namespace Program1
             return score;
         }
 
-        static double test()
+        static void test()
         {
 
             Console.WriteLine("reading test data...");
@@ -211,20 +211,20 @@ namespace Program1
             //load model & feature files for testing
             toolbox tb = new toolbox(XX, false);
 
-            Stopwatch timer = new Stopwatch();
-            timer.Start();
+            //Stopwatch timer = new Stopwatch();
+           // timer.Start();
 
             List<double> scoreList = tb.test(XX, 0);
 
-            timer.Stop();
-            double time = timer.ElapsedMilliseconds / 1000.0;
+            //timer.Stop();
+            //double time = timer.ElapsedMilliseconds / 1000.0;
 
-            Global.timeList.Add(time);
-            double score = scoreList[0];
-            Global.scoreListList.Add(scoreList);
+            //Global.timeList.Add(time);
+            //double score = scoreList[0];
+            //Global.scoreListList.Add(scoreList);
 
-            resSummarize.write();
-            return score;
+            //resSummarize.write();
+            //return score;
         }
         public static void ClearDirectory(string path)
 
@@ -259,44 +259,7 @@ namespace Program1
             }
 
         }
-        //public static List<string> getChunksout(List<int> iresult, List<string> words)
-        //{
-        //    List<string> chunk = new List<string>();
-        //    int i = 0; string temp = " ";
-
-        //    while (i < iresult.Count)
-        //    {
-        //        if (Global.chunkTagMap[iresult[i]] == ("O"))
-        //        {
-        //            if (!temp.Trim().Equals(""))
-        //                chunk.Add(temp.Trim());
-        //            temp = "";
-        //            i++;
-        //            continue;
-        //        }
-        //        else if (Global.chunkTagMap[iresult[i]].StartsWith("B"))
-        //        {
-        //            if (!temp.Trim().Equals(""))
-        //                chunk.Add(temp.Trim());
-        //            temp = (words[i] + " " + i + " " + Global.chunkTagMap[iresult[i]] + " ");
-        //            i++;
-        //            continue;
-        //        }
-        //        else if (Global.chunkTagMap[iresult[i]].StartsWith("I"))
-        //        {
-        //            if (!temp.Trim().Equals(""))
-        //            {
-        //                temp += (words[i] + " " + i + " ");
-        //            }
-
-        //            i++;
-        //        }
-        //    }
-        //    if (!temp.Trim().Equals(""))
-        //        chunk.Add(temp.Trim());
-
-        //    return chunk;
-        //}
+     
 
         static void crossValidation()
         {

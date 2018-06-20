@@ -15,6 +15,7 @@ namespace Program1
 {
     namespace Feature
     {
+        [Serializable]
         class baseHashMap<K, V> : IEnumerable<baseHashMap<K, V>.KeyValuePair>
         {
             private pair[] _ary;

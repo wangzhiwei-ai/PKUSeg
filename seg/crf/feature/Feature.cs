@@ -2,8 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
+using System.Linq;
 using System.Collections;
-
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Program1
 {
@@ -11,9 +14,69 @@ namespace Program1
     {
         class Feature
         {
-            static baseHashSet<string> featureSet = new baseHashSet<string>();
+            static HashSet<string> featureSet = new HashSet<string>();
 
             public static void saveFeature(string file)
+            {
+                List<string> featureList = featureSet.ToList();
+                int number = (int)(featureSet.Count / 10);
+                
+                Parallel.For(0, 10, i =>
+                 {
+                     if (i == 9)
+                     {
+                         StreamWriter sw = new StreamWriter(file +"_" + i.ToString());
+                         foreach (string word in featureList.GetRange(i * number, featureList.Count-i*number))
+                         {
+                             sw.WriteLine(word);
+                         }
+                         sw.Close();
+                     }
+                     else
+                     {
+                         StreamWriter sw = new StreamWriter(file + "_" + i.ToString());
+                         foreach (string word in featureList.GetRange(i * number, (i+1) * number - i * number))
+                         {
+                             sw.WriteLine(word);
+                         }
+                         sw.Close();
+                     }
+                    
+                 });
+                
+            }
+
+
+            public static void readFeature(string file)
+            {
+                List<string>[] featureList = new List<string>[10];
+                Parallel.For(0, 10, i =>
+                {
+                    featureList[i] = new List<string>();
+                    StreamReader sr = new StreamReader(file + "_" + i.ToString());
+                    string line = "";
+                    while ((line = sr.ReadLine()) != null)
+                    {
+                        featureList[i].Add(line.Trim());
+                    }
+                    sr.Close();
+
+                });
+                List<string> feature = new List<string>();
+                //Parallel.For(0, 10, i =>
+                for(int i = 0;i<featureList.Length;i++)
+                {
+                    for (int k = 0; k < featureList[i].Count; k++)
+                    {
+                        featureSet.Add(featureList[i][k]);
+                    }
+
+                }//);
+
+                
+            }
+
+            public static void saveFeatureNormal(string file)
             {
                 StreamWriter sw = new StreamWriter(file);
                 foreach (string word in featureSet)
@@ -24,7 +87,8 @@ namespace Program1
             }
 
 
-            public static void readFeature(string file)
+
+            public static void readFeatureNormal(string file)
             {
                 StreamReader sr = new StreamReader(file);
                 string line = "";
@@ -33,6 +97,25 @@ namespace Program1
                     featureSet.Add(line.Trim());
                 }
                 sr.Close();
+            }
+
+
+            public static void saveFeatureBinary(string path)
+            {
+                FileStream fs = new FileStream(path, FileMode.Create);
+                BinaryFormatter sl = new BinaryFormatter();
+                sl.Serialize(fs, featureSet);
+                fs.Close();
+            }
+
+
+            public static void readFeatureBinary(string path)
+            {
+                FileStream fs = new FileStream(path, FileMode.Open);
+                BinaryFormatter bf = new BinaryFormatter();
+                featureSet = bf.Deserialize(fs) as HashSet<string>;
+                fs.Close();
+               // return ps;
             }
 
             public static void getFeatureSet(string fname)
@@ -137,7 +220,7 @@ namespace Program1
                 List<string> wordSeqList = new List<string>();
                 List<string> tagSeqList = new List<string>();
                 normalize(file, wordSeqList, tagSeqList);
-                Console.WriteLine("{0} size: {1}", file, wordSeqList.Count);
+                //Console.WriteLine("{0} size: {1}", file, wordSeqList.Count);
 
                 Feature.writeFeaturesTag(wordSeqList, tagSeqList, file1);
             }
@@ -148,16 +231,17 @@ namespace Program1
                 StreamWriter swFeatureFile = new StreamWriter(file);
 
                 //count length dist
-                baseHashMap<int, int> lengthCountMap = new baseHashMap<int, int>();
-
+                //baseHashMap<int, int> lengthCountMap = new baseHashMap<int, int>();
+                string[] featureList = new string[wordSeqList.Count];
                 int interval = wordSeqList.Count / 10;
-                for (int i = 0; i < wordSeqList.Count; i++)
+                Parallel.For(0, wordSeqList.Count, i =>
+               //for(int i = 0;i< wordSeqList.Count;i++)
                 {
-                    if (i % interval == 0)
-                    {
-                        double percent = (double)i / (double)wordSeqList.Count * 100.0;
-                        Console.WriteLine("{0}: sentence #{1} --> {2}%", file, i, percent.ToString("f2"));
-                    }
+                    //if (i % interval == 0)
+                    //{
+                    //    double percent = (double)i / (double)wordSeqList.Count * 100.0;
+                    //    Console.WriteLine("{0}: sentence #{1} --> {2}%", file, i, percent.ToString("f2"));
+                    //}
 
                     string wordSeq = wordSeqList[i];
                     string[] wordAry = wordSeq.Split(Global.blankAry);
@@ -165,46 +249,59 @@ namespace Program1
                     string[] tagAry = tagSeq.Split(Global.blankAry);
 
                     int length = wordAry.Length;
-                    lengthCountMap[length]++;
+                    StringBuilder writeFeature = new StringBuilder();
+                    //lengthCountMap[length]++;
 
                     for (int k = 0; k < wordAry.Length; k++)
                     {
                         List<string> nodeFeatures = new List<string>();
                         getNodeFeatures(k, wordAry, ref nodeFeatures);
 
-                        swFeatureFile.Write(wordAry[k] + " ");//word
+                        writeFeature.Append(wordAry[k] + " ");//word
+                        //swFeatureFile.Write(wordAry[k] + " ");//word
                         foreach (string f in nodeFeatures)//features
                         {
                             if (f == "/")
-                                swFeatureFile.Write("/ ");
+                                //swFeatureFile.Write("/ ");
+                                writeFeature.Append("/ ");
                             else
                             {
                                 string[] fAry = f.Split(Global.slashAry);
                                 string id = fAry[0];
                                 if (featureSet.Contains(id))
-                                    swFeatureFile.Write(f + " ");
+                                    //swFeatureFile.Write(f + " ");
+                                    writeFeature.Append(f + " ");
                                 else
-                                    swFeatureFile.Write("/ ");
+                                    //swFeatureFile.Write("/ ");
+                                    writeFeature.Append("/ ");
                             }
                         }
-                        swFeatureFile.Write(tagAry[k]);//tag
-                        swFeatureFile.WriteLine();
+                        //swFeatureFile.Write(tagAry[k]);
+                        writeFeature.Append(tagAry[k] + "\n");//tag
+                        //swFeatureFile.WriteLine();
                     }
-                    swFeatureFile.WriteLine();
+                    writeFeature.Append("\n");
+                    featureList[i] = writeFeature.ToString();
+                    //swFeatureFile.WriteLine();
+                });
+
+                for (int i = 0; i < featureList.Length; i++)
+                {
+                    swFeatureFile.Write(featureList[i]);
                 }
                 swFeatureFile.Close();
 
-                //output length dist
-                List<string> sortList2 = new List<string>();
-                foreach (baseHashMap<int, int>.KeyValuePair kv in lengthCountMap)
-                {
-                    double v = (double)kv.Value / (double)wordSeqList.Count * 100.0;
-                    sortList2.Add(string.Format("{0}  count:{1} --> {2}%", kv.Key, kv.Value, v.ToString("f2")));
-                }
-                sortList2.Sort(ListSortFunc.compareKV_key);
-                Console.WriteLine("length distribution:");
-                foreach (string im in sortList2)
-                    Console.WriteLine(im);
+                ////output length dist
+                //List<string> sortList2 = new List<string>();
+                //foreach (baseHashMap<int, int>.KeyValuePair kv in lengthCountMap)
+                //{
+                //    double v = (double)kv.Value / (double)wordSeqList.Count * 100.0;
+                //    sortList2.Add(string.Format("{0}  count:{1} --> {2}%", kv.Key, kv.Value, v.ToString("f2")));
+                //}
+                //sortList2.Sort(ListSortFunc.compareKV_key);
+                //Console.WriteLine("length distribution:");
+                //foreach (string im in sortList2)
+                //    Console.WriteLine(im);
             }
 
 

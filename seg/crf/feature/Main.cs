@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.IO;
 using System.Collections;
-
+using System.Diagnostics;
 
 namespace Program1
 {
@@ -12,15 +12,7 @@ namespace Program1
         class Program2
         {
 
-            //static void runProcess(string trainFile, string testFile)
-            //{
-            //    //Global.log = new StreamWriter("data/temp/log.txt");
-
-            //    process(trainFile, testFile);
-
-            //    //Global.log.Close();
-
-            //}
+           
 
             public static void processTest(string testFile)
             {
@@ -28,9 +20,22 @@ namespace Program1
                 Global.trainBigramSet = new baseHashSet<string>();
                 readUnigram(Program1.Global.modelDir + "/unigram_word.txt");
                 readBigramFeature(Program1.Global.modelDir + "/bigram_word.txt");
+
+                
+                //Stopwatch timer = new Stopwatch();
+                //timer.Start();
                 Feature.readFeature(Program1.Global.modelDir + "/featureSet.txt");
+                //Feature.readFeatureBinary(Program1.Global.modelDir + "/featureSetBinary.txt");
+                //Feature.saveFeature(Program1.Global.modelDir + "/featureSet.txt");
+                //timer.Stop();
+                //Console.WriteLine("read FeatureBinary" + timer.Elapsed);
+                //timer.Restart();
+                //Feature.saveFeatureBinary(Program1.Global.modelDir + "/featureSetBinary.txt");
                 convertTest(testFile, "data/temp/c.test.txt", "data/temp/test.raw.txt");
+                
                 Feature.processFile("data/temp/c.test.txt", "data/temp/test.txt");
+                //timer.Stop();
+                //Console.WriteLine("convert" + timer.Elapsed);
 
             }
             public static void processTrain(string trainFile)

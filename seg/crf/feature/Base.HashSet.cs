@@ -15,6 +15,7 @@ namespace Program1
 {
     namespace Feature
     {
+        [Serializable]
         class baseHashSet<K> : IEnumerable<K>
         {
             private K[] _ary;

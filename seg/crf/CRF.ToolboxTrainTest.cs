@@ -271,10 +271,15 @@ namespace Program1
                     gold += im.ToString() + ",";
                 goldTagList.Add(gold);
             }
+            List<double> scoreList = new List<double>();
+            if (Global.runMode == "train")
+            {
+                List<double> infoList = new List<double>();
+                scoreList = fscore.getFscore(goldTagList, resTagList, infoList);
+                Global.swLog.WriteLine("#gold-chunk={0}  #output-chunk={1}  #correct-output-chunk={2}  precision={3}  recall={4}  f-score={5}", infoList[0], infoList[1], infoList[2], scoreList[1].ToString("f2"), scoreList[2].ToString("f2"), scoreList[0].ToString("f2"));
 
-            List<double> infoList = new List<double>();
-            List<double> scoreList = fscore.getFscore(goldTagList, resTagList, infoList);
-            Global.swLog.WriteLine("#gold-chunk={0}  #output-chunk={1}  #correct-output-chunk={2}  precision={3}  recall={4}  f-score={5}", infoList[0], infoList[1], infoList[2], scoreList[1].ToString("f2"), scoreList[2].ToString("f2"), scoreList[0].ToString("f2"));
+            }
+           
             return scoreList;
         }
 

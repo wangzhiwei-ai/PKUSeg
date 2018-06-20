@@ -31,7 +31,7 @@ namespace Program1
         public static int random = 0;//0 for 0-initialization of model weights, 1 for random init of model weights
         public static string evalMetric = "f1";//tok.acc (token accuracy), str.acc (string accuracy), f1 (F1-score)
         public static double trainSizeScale = 1;//for scaling the size of training data
-        public static int ttlIter = 100;//# of training iterations
+        public static int ttlIter = 20;//# of training iterations
         public static int nUpdate = 10;//for ADF training
         public static string outFolder = tempFile + "/" + "output/";
         public static int save = 1;//save model file

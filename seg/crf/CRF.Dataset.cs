@@ -8,14 +8,17 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
+using System.Linq;
 using System.Collections;
 using System.IO.Compression;
+using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace Program1
 {
     class dataFormat
     {
-        baseHashMap<string, int> featureIndexMap = new baseHashMap<string, int>();
+        Dictionary<string, int> featureIndexMap = new Dictionary<string, int>();
         baseHashMap<string, int> tagIndexMap = new baseHashMap<string, int>();
 
         public void convert()
@@ -29,8 +32,13 @@ namespace Program1
             else
             {
                 //getMaps(Global.fTrain);
+                Stopwatch timer = new Stopwatch();
+                //timer.Start();
                 readFeature(Global.modelDir + "/featureIndex.txt");
+                //saveFeature(Global.modelDir + "/featureIndex.txt"); 
                 readTag(Global.modelDir + "/tagIndex.txt");
+                //timer.Stop();
+                //Console.WriteLine("read featureIndex" + timer.Elapsed);
             }
 
             convertFile(Global.fTest);
@@ -39,7 +47,70 @@ namespace Program1
         }
 
 
-        public void readFeature(string path)
+
+        public void saveFeature(string file)
+        {
+            List<string> featureList = featureIndexMap.Keys.ToList();
+            int number = (int)(featureList.Count / 10);
+
+            Parallel.For(0, 10, i =>
+            {
+                if (i == 9)
+                {
+                    StreamWriter sw = new StreamWriter(file + "_" + i.ToString());
+                    foreach (string word in featureList.GetRange(i * number, featureList.Count - i * number))
+                    {
+                        sw.WriteLine(word+" "+featureIndexMap[word].ToString());
+                    }
+                    sw.Close();
+                }
+                else
+                {
+                    StreamWriter sw = new StreamWriter(file + "_" + i.ToString());
+                    foreach (string word in featureList.GetRange(i * number, (i + 1) * number - i * number))
+                    {
+                        sw.WriteLine(word + " " + featureIndexMap[word].ToString());
+                    }
+                    sw.Close();
+                }
+
+            });
+
+        }
+
+
+        public void readFeature(string file)
+        {
+            List<string>[] featureList = new List<string>[10];
+            Parallel.For(0, 10, i =>
+            {
+                featureList[i] = new List<string>();
+                StreamReader sr = new StreamReader(file + "_" + i.ToString());
+                string line = "";
+                while ((line = sr.ReadLine()) != null)
+                {
+                    featureList[i].Add(line.Trim());
+                }
+                sr.Close();
+
+            });
+            List<string> feature = new List<string>();
+            //Parallel.For(0, 10, i =>
+            for (int i = 0; i < featureList.Length; i++)
+            {
+                for (int k = 0; k < featureList[i].Count; k++)
+                {
+                    string[] wordIndex = featureList[i][k].Split();
+                    featureIndexMap.Add(wordIndex[0], int.Parse(wordIndex[1]));
+                }
+
+            }//);
+
+
+        }
+
+
+        public void readFeatureNormal(string path)
         {
             StreamReader sr = new StreamReader(path);
             string line = "";
@@ -212,7 +283,7 @@ namespace Program1
 
 
         //for small memory load, should read line by line
-        public void convertFile(string file)
+        public void convertFile(string  file)
         {
             if (!File.Exists(file))
             {
@@ -242,17 +313,33 @@ namespace Program1
             swGold.WriteLine(tagIndexMap.Count);
             swGold.WriteLine();
 
-            while (!sr.EndOfStream)
+            List<string> readLines = new List<string>();
+           
+            while(!sr.EndOfStream)
             {
-                string line = sr.ReadLine();
+                readLines.Add(sr.ReadLine());
+            }
+            sr.Close();
+            string[] featureList = new string[readLines.Count];
+            string[] goldList = new string[readLines.Count];
+            Parallel.For(0, readLines.Count, k =>
+            //for(int k = 0;k<readLines.Count;k++)
+            {
+                string line = readLines[k];
                 line = line.Replace("\t", " ");
                 line = line.Replace("\r", "\r");
+                StringBuilder featureLine = new StringBuilder();
+                StringBuilder goldLine = new StringBuilder();
                 if (line == "")//end of a sample
                 {
-                    swFeature.WriteLine();
-                    swGold.WriteLine();
-                    swGold.WriteLine();
-                    continue;
+                    featureLine.Append("\r\n");
+                    goldLine.Append("\r\n\r\n");
+                    featureList[k]=(featureLine.ToString());
+                    goldList[k]=(goldLine.ToString());
+                    //swFeature.WriteLine();
+                    //swGold.WriteLine();
+                    //swGold.WriteLine();
+                    return;
                 }
                 int flag = 0;
                 string[] ary = line.Split(Global.blankAry, StringSplitOptions.RemoveEmptyEntries);
@@ -275,22 +362,33 @@ namespace Program1
                     flag = 1;
                     int fIndex = featureIndexMap[feature];
                     if (!real)
-                        swFeature.Write("{0},", fIndex);
+                        featureLine.Append(fIndex.ToString() + ",");
+                    //swFeature.Write("{0},", fIndex);
                     else
-                        swFeature.Write("{0}/{1},", fIndex, value);
+                        featureLine.Append(fIndex.ToString() + "/" + value.ToString() + ","); //("{0}/{1},", fIndex, value);
+                    //swFeature.Write("{0}/{1},", fIndex, value);
                 }
                 if (flag == 0)
                 {
-                    swFeature.Write("0");
+                    featureLine.Append("0");
+                    //swFeature.Write("0");
                 }
-                swFeature.WriteLine();
-
+                //swFeature.WriteLine();
+                featureLine.Append("\n");
                 string tag = ary[ary.Length - 1];
                 int tIndex = tagIndexMap[tag];
-                swGold.Write("{0},", tIndex);
-            }
+                goldLine.Append(tIndex.ToString() + ",");
+                featureList[k] = (featureLine.ToString());
+                goldList[k] = (goldLine.ToString());
+                //swGold.Write("{0},", tIndex);
+            });
 
-            sr.Close();
+            //sr.Close();
+            for(int i = 0;i<featureList.Length;i++)
+            {
+                swFeature.Write(featureList[i]);
+                swGold.Write(goldList[i]);
+            }
             swFeature.Close();
             swGold.Close();
         }

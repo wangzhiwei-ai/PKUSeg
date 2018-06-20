@@ -1,1 +1,1 @@
-LSTM.exe test fast data/msr_test.utf8 data/msr_test_output_soft.txt
+LSTM.exe test data/msr_test.utf8 data/msr_test_output_soft.utf8

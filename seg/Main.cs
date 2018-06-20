@@ -23,25 +23,25 @@ namespace Seg
             
             else
             {
-                if (!System.IO.File.Exists(args[2]))
+                if (!System.IO.File.Exists(args[1]))
                 {
                     Console.WriteLine("file does not exist.");
                     Console.ReadLine();
                     return;
                 }
 
-                Global.code = args[1];
-                if (args[1] == "train")
+                
+                if (args[0] == "train")
                 {
                     Global.mode = "train";
-                    Global.trainFile = args[2];
-                    Global.testFile = args[3];
+                    Global.trainFile = args[1];
+                    Global.testFile = args[2];
                 }
                 else
                 {
                     Global.mode = "test";
-                    Global.readFile = args[2];
-                    Global.outputFile = args[3];
+                    Global.readFile = args[1];
+                    Global.outputFile = args[2];
                 }
             }
             if (!System.IO.File.Exists("data"))
@@ -53,19 +53,19 @@ namespace Seg
                 System.IO.Directory.CreateDirectory("data/temp");
             }
 
-            if (!System.IO.File.Exists("data/heavy"))
-            {
-                System.IO.Directory.CreateDirectory("data/heavy");
-            }
+            //if (!System.IO.File.Exists("data/heavy"))
+            //{
+            //    System.IO.Directory.CreateDirectory("data/heavy");
+            //}
 
             if (!System.IO.File.Exists("model"))
             {
                 System.IO.Directory.CreateDirectory("model");
             }
-            if (!System.IO.File.Exists("model/heavy"))
-            {
-                System.IO.Directory.CreateDirectory("model/heavy");
-            }
+            //if (!System.IO.File.Exists("model/heavy"))
+            //{
+            //    System.IO.Directory.CreateDirectory("model/heavy");
+            //}
             if (!System.IO.File.Exists("model/fast"))
             {
                 System.IO.Directory.CreateDirectory("model/fast");
@@ -91,27 +91,27 @@ namespace Seg
 
                 Program1.MainClass.Run();
             }
-            else if (Global.code == "heavy")
-            {
+            //else if (Global.code == "heavy")
+            //{
 
-                if (Global.mode == "train")
-                {
-                    Program.Global.mode = "train";
-                    Program.Global.trainFile = Global.trainFile;
-                    Program.Global.testFile = Global.testFile;
-                    Program.Global.isRead = int.Parse(args[3]);
+            //    if (Global.mode == "train")
+            //    {
+            //        Program.Global.mode = "train";
+            //        Program.Global.trainFile = Global.trainFile;
+            //        Program.Global.testFile = Global.testFile;
+            //        Program.Global.isRead = int.Parse(args[3]);
 
-                }
-                else
-                {
-                    Program.Global.mode = "test";
-                    Program.Global.readFile = Global.readFile;
-                    Program.Global.outputFile = Global.outputFile;
-                }
+            //    }
+            //    else
+            //    {
+            //        Program.Global.mode = "test";
+            //        Program.Global.readFile = Global.readFile;
+            //        Program.Global.outputFile = Global.outputFile;
+            //    }
 
 
-                Program.Program.Run();
-            }
+            //    Program.Program.Run();
+            //}
         }
     }
 }
