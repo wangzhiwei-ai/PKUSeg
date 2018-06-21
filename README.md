@@ -1,5 +1,5 @@
 # PKUSeg：一个高准确度的中文分词工具包
-PKUSeg简单易用，支持多领域分词，在不同领域的数据上都大幅提高了分词的准确率。
+PKUSeg简单易用，支持多领域分词，在不同领域的数据上都大幅提高了分词的准确率。以下为在MSRA和CTB8上数据集上的各分词工具包的性能对比：
 
 MSRA
 
@@ -34,7 +34,7 @@ PKUSeg由北京大学语言计算与机器学习研究组研制推出的一套全新的中文分词工具包。PKUS
 3. 支持用户自训练模型。支持用户使用全新的标注的数据进行训练。
 
 ## 使用方式
-    * 运行seg/bin/x64/Release目录下的seg.exe程序
+    * 运行seg/bin/x64/Release目录下的pkuseg.exe程序
 	* 分词模式：pkuseg.exe test [-input file] [-output file]
     * 训练模式：pkuseg.exe train [-train file] [-test file]
     * 从文本文件输入输出（注意均为UTF8文本）
