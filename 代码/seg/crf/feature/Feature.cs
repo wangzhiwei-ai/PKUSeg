@@ -216,7 +216,7 @@ namespace Program1
 
             public static void processFile(string file, string file1)
             {
-                Console.Error.WriteLine("running...");
+               // Console.Error.WriteLine("running...");
                 List<string> wordSeqList = new List<string>();
                 List<string> tagSeqList = new List<string>();
                 normalize(file, wordSeqList, tagSeqList);

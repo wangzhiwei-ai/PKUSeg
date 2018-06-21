@@ -44,7 +44,7 @@ namespace Program1
         {
 
             Stopwatch timer = new Stopwatch();
-            timer.Start();
+            //timer.Start();
 
             if (Global.runMode.Contains("train"))
             {
@@ -115,8 +115,8 @@ namespace Program1
                 else
                 {
                     test();//normal test
-                    timer.Stop();
-                    Console.WriteLine("test" + timer.Elapsed);
+                    //timer.Stop();
+                    //Console.WriteLine("test" + timer.Elapsed);
                     ProcessData.tocrfoutput(Global.outFolder + "/outputTag.txt", Global.outputFile, Global.tempFile + "/" + "test.raw.txt");
                   
                 }
@@ -132,8 +132,8 @@ namespace Program1
 
             timer.Stop();
             double time = timer.ElapsedMilliseconds / 1000.0;
-            Console.WriteLine("\ndone. run time (sec): " + time.ToString());
-            Global.swLog.WriteLine("\ndone. run time (sec): " + time.ToString());
+            //Console.WriteLine("\ndone. run time (sec): " + time.ToString());
+            //Global.swLog.WriteLine("\ndone. run time (sec): " + time.ToString());
 
             Global.swLog.Close();
             Global.swResRaw.Close();
@@ -203,10 +203,10 @@ namespace Program1
         static void test()
         {
 
-            Console.WriteLine("reading test data...");
+            //Console.WriteLine("test data ...");
             Global.swLog.WriteLine("reading test data...");
             dataSet XX = new dataSet(Global.fFeatureTest, Global.fGoldTest);
-            Console.WriteLine("Done! test data size: {0}", XX.Count);
+            Console.WriteLine("test data size: {0}", XX.Count);
             Global.swLog.WriteLine("Done! test data size: {0}", XX.Count);
             //load model & feature files for testing
             toolbox tb = new toolbox(XX, false);
