@@ -1,0 +1,1 @@
+pkuseg.exe train data/msr_training.utf8 data/msr_test_gold.utf8
