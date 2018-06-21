@@ -56,14 +56,14 @@ PKUSeg由北京大学语言计算与机器学习研究组研制推出的一套全新的中文分词工具包。PKUS
 
 	
 ### 预训练模型
-分词模式下，用户需要在seg/bin/x64/Release/model/fast加载预训练好的模型，根据具体需要，用户可以自定义的选择不同的预训练模型。以下是对模型的说明及下载地址：
+分词模式下，用户需要在seg/bin/x64/Release/model/fast加载预训练好的模型，根据具体需要，用户可以选择不同的预训练模型。以下是对模型的说明及下载地址：
 
 ```
 msra：在MSRA（新闻语料）上训练的模型，下载地址https://drive.google.com/open?id=1c1Dn2aKy5KFJWir2-GkXhG1XeaGVW1wE
 ctb8：在CTB8（新闻文本及网络文本的混合型语料）上训练的模型，下载地址为https://drive.google.com/drive/folders/1oLN7dlcPvQ97ypk4JZNLOQteUd4DaEdn?usp=sharing
 weibo：在微博（网络文本语料）上训练的模型，下载地址为https://drive.google.com/open?id=1ZdZluWRV4jDM7x7_BwrOHsLS-m17rdnM
 ```
-MSRA数据由[第二届国际汉语分词评测比赛](http://sighan.cs.uchicago.edu/bakeoff2005/)提供，CTB8由[LDC](https://catalog.ldc.upenn.edu/ldc2013t21)提供，weibo数据由[NLPCC](http://tcci.ccf.org.cn/conference/2016/pages/page05_CFPTasks.html)分词比赛提供。
+MSRA数据由[第二届国际汉语分词评测比赛](http://sighan.cs.uchicago.edu/bakeoff2005/)提供，CTB8数据由[LDC](https://catalog.ldc.upenn.edu/ldc2013t21)提供，WEIBO数据由[NLPCC](http://tcci.ccf.org.cn/conference/2016/pages/page05_CFPTasks.html)分词比赛提供。
 
 
 
