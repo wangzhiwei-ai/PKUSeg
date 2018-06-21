@@ -38,7 +38,7 @@ PKUSeg由北京大学语言计算与机器学习研究组研制推出的一套全新的中文分词工具包。PKUS
 * 分词模式：pkuseg.exe test [-input file] [-output file]
 * 训练模式：pkuseg.exe train [-train file] [-test file]
 * 从文本文件输入输出（注意均为UTF8文本）
-* linux程序用户需要配置mono使用。
+* linux环境需要配置mono使用。
 ### 参数说明
     test  分词
     train 训练
