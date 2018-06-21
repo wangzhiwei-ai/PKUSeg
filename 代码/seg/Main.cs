@@ -66,9 +66,9 @@ namespace Seg
             //{
             //    System.IO.Directory.CreateDirectory("model/heavy");
             //}
-            if (!System.IO.File.Exists("model/fast"))
+            if (!System.IO.File.Exists("model"))
             {
-                System.IO.Directory.CreateDirectory("model/fast");
+                System.IO.Directory.CreateDirectory("model");
             }
 
             if (Global.code == "fast")

@@ -1,0 +1,10 @@
+F:\github\word_seg_\代码\seg\bin\Debug\pkuseg.exe.config
+F:\github\word_seg_\代码\seg\bin\Debug\pkuseg.exe
+F:\github\word_seg_\代码\seg\bin\Debug\pkuseg.pdb
+F:\github\word_seg_\代码\seg\bin\Debug\MathNet.Numerics.dll
+F:\github\word_seg_\代码\seg\bin\Debug\MathNet.Numerics.xml
+F:\github\word_seg_\代码\seg\obj\Debug\seg.csprojResolveAssemblyReference.cache
+F:\github\word_seg_\代码\seg\obj\Debug\seg.csproj.CoreCompileInputs.cache
+F:\github\word_seg_\代码\seg\obj\Debug\seg.csproj.CopyComplete
+F:\github\word_seg_\代码\seg\obj\Debug\pkuseg.exe
+F:\github\word_seg_\代码\seg\obj\Debug\pkuseg.pdb

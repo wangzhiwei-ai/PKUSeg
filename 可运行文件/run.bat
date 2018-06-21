@@ -1,1 +1,1 @@
-pkuseg.exe train data/msr_training.utf8 data/msr_test_gold.utf8
+pkuseg.exe test data/msr_test.utf8 data/msr_test_output_soft.utf8

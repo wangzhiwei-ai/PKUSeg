@@ -36,7 +36,7 @@ PKUSeg由北京大学语言计算与机器学习研究组研制推出的一套全新的中文分词工具包。PKUS
 
 
 ## 使用方式
-* 运行seg/bin/x64/Release目录下的pkuseg.exe程序
+* 运行可执行文件目录下的pkuseg.exe程序
 * 分词模式：pkuseg.exe test [-input file] [-output file]
 * 训练模式：pkuseg.exe train [-train file] [-test file]
 * 从文本文件输入输出（注意均为UTF8文本）
@@ -51,18 +51,17 @@ PKUSeg由北京大学语言计算与机器学习研究组研制推出的一套全新的中文分词工具包。PKUS
 ### 运行样例
 	
     pkuseg.exe test data/input.txt data/output.txt 		windows环境下进行分词
-	pkuseg.exe train data/train.txt data/test.txt 		根据指定的训练文件自定义训练，训练模型会保存到seg/bin/x64/Release/model目录下
+	pkuseg.exe train data/train.txt data/test.txt 		根据指定的训练文件自定义训练，训练模型会保存到model目录下
     mono pkuseg.exe test data/input.txt data/output.txt 	linux环境下进行分词
 
 	
 ### 预训练模型
-分词模式下，用户需要在seg/bin/x64/Release/model/fast加载预训练好的模型，根据具体需要，用户可以选择不同的预训练模型。以下是对模型的说明及下载地址：
+分词模式下，用户需要在model目录下加载预训练好的模型，根据具体需要，用户可以选择不同的预训练模型。以下是对模型的说明：
 
-```
-msra：在MSRA（新闻语料）上训练的模型，下载地址为https://drive.google.com/open?id=1c1Dn2aKy5KFJWir2-GkXhG1XeaGVW1wE
-ctb8：在CTB8（新闻文本及网络文本的混合型语料）上训练的模型，下载地址为https://drive.google.com/drive/folders/1oLN7dlcPvQ97ypk4JZNLOQteUd4DaEdn?usp=sharing
-weibo：在微博（网络文本语料）上训练的模型，下载地址为https://drive.google.com/open?id=1ZdZluWRV4jDM7x7_BwrOHsLS-m17rdnM
-```
+1. [msra](https://drive.google.com/open?id=1c1Dn2aKy5KFJWir2-GkXhG1XeaGVW1wE)：在MSRA（新闻语料）上训练的模型
+2. ctb8(https://drive.google.com/drive/folders/1oLN7dlcPvQ97ypk4JZNLOQteUd4DaEdn?usp=sharing)：在CTB8（新闻文本及网络文本的混合型语料）上训练的模型
+3. [weibo](https://drive.google.com/open?id=1ZdZluWRV4jDM7x7_BwrOHsLS-m17rdnM)：在微博（网络文本语料）上训练的模型
+
 MSRA数据由[第二届国际汉语分词评测比赛](http://sighan.cs.uchicago.edu/bakeoff2005/)提供，CTB8数据由[LDC](https://catalog.ldc.upenn.edu/ldc2013t21)提供，WEIBO数据由[NLPCC](http://tcci.ccf.org.cn/conference/2016/pages/page05_CFPTasks.html)分词比赛提供。
 
 
