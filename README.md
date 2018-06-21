@@ -14,7 +14,7 @@ PKUSeg由北京大学语言计算与机器学习研究组研制推出的一套全新的中文分词工具包。PKUS
 
 1. 高分词准确率。相比于传统的分词工具包，我们的工具包在不同领域的数据上都大幅提高了分词的准确度。根据我们的测试结果，PKUSeg分别在示例数据集（MSRA和CTB8）上降低了79.33%和63.67%的分词错误率。
 2. 多领域分词。我们训练了多种不同领域的分词模型。根据待分词的领域特点，用户可以自由地选择不同的模型。
-3. 支持用户自训练模型。支持用户使用全新的标注的数据进行训练。
+3. 支持用户自训练模型。支持用户使用全新的标注数据进行训练。
 
 ## 各类分词工具包的性能对比
 我们选择THULAC、结巴分词国内代表分词软件与PKUSeg做性能比较。我们选择Windows作为测试环境，在新闻数据(MSRA)和混合型文本(CTB8)数据上对不同软件进行了速度和准确率测试。我们使用了第二届国际汉语分词评测比赛提供的分词评价脚本。评测结果如下：
@@ -46,7 +46,7 @@ PKUSeg由北京大学语言计算与机器学习研究组研制推出的一套全新的中文分词工具包。PKUS
     train 训练
     [-input] 用户指定的待分词文件
     [-output] 用户指定的分词结果输出文件
-    [-trainFile] & [-testFile] 用户标注的训练语料，句子之间以换行符分隔，词语之间以空格分隔
+    [-trainFile] & [-testFile] 用户标注的语料，句子之间以换行符分隔，词语之间以空格分隔
     
 ### 运行样例
 	
@@ -59,7 +59,7 @@ PKUSeg由北京大学语言计算与机器学习研究组研制推出的一套全新的中文分词工具包。PKUS
 分词模式下，用户需要在seg/bin/x64/Release/model/fast加载预训练好的模型，根据具体需要，用户可以选择不同的预训练模型。以下是对模型的说明及下载地址：
 
 ```
-msra：在MSRA（新闻语料）上训练的模型，下载地址https://drive.google.com/open?id=1c1Dn2aKy5KFJWir2-GkXhG1XeaGVW1wE
+msra：在MSRA（新闻语料）上训练的模型，下载地址为https://drive.google.com/open?id=1c1Dn2aKy5KFJWir2-GkXhG1XeaGVW1wE
 ctb8：在CTB8（新闻文本及网络文本的混合型语料）上训练的模型，下载地址为https://drive.google.com/drive/folders/1oLN7dlcPvQ97ypk4JZNLOQteUd4DaEdn?usp=sharing
 weibo：在微博（网络文本语料）上训练的模型，下载地址为https://drive.google.com/open?id=1ZdZluWRV4jDM7x7_BwrOHsLS-m17rdnM
 ```
