@@ -10,14 +10,14 @@ PKUSeg简单易用，支持多领域分词，在不同领域的数据上都大幅提高了分词的准确率。
 
 ## 主要亮点
 
-PKUSeg由北京大学语言计算与机器学习研究组研制推出的一套全新的中文分词工具包。PKUSeg具有如下几个特点：
+PKUSeg是由北京大学语言计算与机器学习研究组研制推出的一套全新的中文分词工具包。PKUSeg具有如下几个特点：
 
 1. 高分词准确率。相比于其他的分词工具包，我们的工具包在不同领域的数据上都大幅提高了分词的准确度。根据我们的测试结果，PKUSeg分别在示例数据集（MSRA和CTB8）上降低了79.33%和63.67%的分词错误率。
 2. 多领域分词。我们训练了多种不同领域的分词模型。根据待分词的领域特点，用户可以自由地选择不同的模型。
 3. 支持用户自训练模型。支持用户使用全新的标注数据进行训练。
 
 ## 各类分词工具包的性能对比
-我们选择THULAC、结巴分词国内代表分词软件与PKUSeg做性能比较。我们选择Windows作为测试环境，在新闻数据(MSRA)和混合型文本(CTB8)数据上对不同软件进行了速度和准确率测试。我们使用了第二届国际汉语分词评测比赛提供的分词评价脚本。评测结果如下：
+我们选择THULAC、结巴分词等国内代表分词软件与PKUSeg做性能比较。我们选择Windows作为测试环境，在新闻数据(MSRA)和混合型文本(CTB8)数据上对不同软件进行了速度和准确率测试。我们使用了第二届国际汉语分词评测比赛提供的分词评价脚本。评测结果如下：
 
 
 |MSRA | Time | F-score| Error Rate |
@@ -56,11 +56,11 @@ PKUSeg由北京大学语言计算与机器学习研究组研制推出的一套全新的中文分词工具包。PKUS
 
 	
 ### 预训练模型
-分词模式下，用户需要在./model目录下加载预训练好的模型，根据具体需要，用户可以选择不同的预训练模型。以下是对模型的说明：
+分词模式下，用户需要在./model目录下加载预训练好的模型。我们提供了三种不同类型数据的预训练模型，根据具体需要，用户可以选择不同的预训练模型。以下是对预训练模型的说明：
 
-1. [msra](https://pan.baidu.com/s/1twci0QVBeWXUg06dK47tiA)：在MSRA（新闻语料）上训练的模型
-2. [ctb8](https://pan.baidu.com/s/1DCjDOxB0HD2NmP9w1jm8MA)：在CTB8（新闻文本及网络文本的混合型语料）上训练的模型
-3. [weibo](https://pan.baidu.com/s/1QHoK2ahpZnNmX6X7Y9iCgQ)：在微博（网络文本语料）上训练的模型
+1. msra：在MSRA（新闻语料）上训练的模型 [下载地址](https://pan.baidu.com/s/1twci0QVBeWXUg06dK47tiA)
+2. ctb8：在CTB8（新闻文本及网络文本的混合型语料）上训练的模型 [下载地址](https://pan.baidu.com/s/1DCjDOxB0HD2NmP9w1jm8MA)
+3. weibo：在微博（网络文本语料）上训练的模型 [下载地址](https://pan.baidu.com/s/1QHoK2ahpZnNmX6X7Y9iCgQ)
 
 MSRA数据由[第二届国际汉语分词评测比赛](http://sighan.cs.uchicago.edu/bakeoff2005/)提供，CTB8数据由[LDC](https://catalog.ldc.upenn.edu/ldc2013t21)提供，WEIBO数据由[NLPCC](http://tcci.ccf.org.cn/conference/2016/pages/page05_CFPTasks.html)分词比赛提供。
 
@@ -80,7 +80,7 @@ MSRA数据由[第二届国际汉语分词评测比赛](http://sighan.cs.uchicago.edu/bakeoff2005
 @inproceedings{DBLP:conf/acl/SunWL12,
 author = {Xu Sun and Houfeng Wang and Wenjie Li},
 title = {Fast Online Training with Frequency-Adaptive Learning Rates for Chinese Word Segmentation and New Word Detection},
-booktitle = {The 50th Annual Meeting of the.pdf Association for Computational Linguistics, Proceedings of the Conference, July 8-14, 2012, Jeju Island, Korea- Volume 1: Long Papers},
+booktitle = {The 50th Annual Meeting of the Association for Computational Linguistics, Proceedings of the Conference, July 8-14, 2012, Jeju Island, Korea- Volume 1: Long Papers},
 pages = {253--262},
 year = {2012}}
 ```
