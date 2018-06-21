@@ -64,7 +64,7 @@ CTB8：在CTB8（新闻文本及网络文本的混合型语料）上训练的模型 [下载地址](https://pa
 
 WEIBO：在微博（网络文本语料）上训练的模型 [下载地址](https://pan.baidu.com/s/1QHoK2ahpZnNmX6X7Y9iCgQ)
 
-MSRA数据由[第二届国际汉语分词评测比赛](http://sighan.cs.uchicago.edu/bakeoff2005/)提供，CTB8数据由[LDC](https://catalog.ldc.upenn.edu/ldc2013t21)提供，WEIBO数据由[NLPCC](http://tcci.ccf.org.cn/conference/2016/pages/page05_CFPTasks.html)分词比赛提供。
+其中，MSRA数据由[第二届国际汉语分词评测比赛](http://sighan.cs.uchicago.edu/bakeoff2005/)提供，CTB8数据由[LDC](https://catalog.ldc.upenn.edu/ldc2013t21)提供，WEIBO数据由[NLPCC](http://tcci.ccf.org.cn/conference/2016/pages/page05_CFPTasks.html)分词比赛提供。
 
 
 
