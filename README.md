@@ -51,7 +51,7 @@ PKUSeg由北京大学语言计算与机器学习研究组研制推出的一套全新的中文分词工具包。PKUS
 ### 运行样例
 	
     pkuseg.exe test data/input.txt data/output.txt 		windows环境下进行分词
-	pkuseg.exe train data/train.txt data/test.txt 		根据指定的训练文件自定义训练，训练模型会保存到./model目录下
+	pkuseg.exe train data/train.txt data/test.txt 		根据指定的训练文件训练，训练模型会保存到./model目录下
     mono pkuseg.exe test data/input.txt data/output.txt 	linux环境下进行分词
 
 	
