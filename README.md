@@ -50,7 +50,7 @@ PKUSeg由北京大学语言计算与机器学习研究组研制推出的一套全新的中文分词工具包。PKUS
 	
     pkuseg.exe test data/input.txt data/output.txt 		windows环境下进行分词
 	pkuseg.exe train data/train.txt data/test.txt 		根据指定的训练文件自定义训练，训练模型会保存到seg/bin/x64/Release/model目录下
-    mono pkuseg.exe test data/input.txt data/output.txt 		linux环境下进行分词
+    mono pkuseg.exe test data/input.txt data/output.txt 	linux环境下进行分词
 
 	
 ### 预训练模型
@@ -81,7 +81,7 @@ CTB8
 |:------------|-------:|------------:|------------:|
 |jieba|1.29s|79.58|20.42
 |THULAC|5.15s|87.77|12.23
-|PKUSeg|6.78s|**95.64 (+8.97%)**|**4.36 (-63.67%)**
+|PKUSeg|6.78s| **95.64 (+8.97%)**|**4.36 (-63.67%)**
 
 ## 开源协议
 1. PKUSeg面向国内外大学、研究所、企业以及个人用于研究目的免费开放源代码。
