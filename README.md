@@ -51,12 +51,12 @@ PKUSeg由北京大学语言计算与机器学习研究组研制推出的一套全新的中文分词工具包。PKUS
 ### 运行样例
 	
     pkuseg.exe test data/input.txt data/output.txt 		windows环境下进行分词
-	pkuseg.exe train data/train.txt data/test.txt 		根据指定的训练文件自定义训练，训练模型会保存到model目录下
+	pkuseg.exe train data/train.txt data/test.txt 		根据指定的训练文件自定义训练，训练模型会保存到./model目录下
     mono pkuseg.exe test data/input.txt data/output.txt 	linux环境下进行分词
 
 	
 ### 预训练模型
-分词模式下，用户需要在model目录下加载预训练好的模型，根据具体需要，用户可以选择不同的预训练模型。以下是对模型的说明：
+分词模式下，用户需要在./model目录下加载预训练好的模型，根据具体需要，用户可以选择不同的预训练模型。以下是对模型的说明：
 
 1. [msra](https://drive.google.com/open?id=1c1Dn2aKy5KFJWir2-GkXhG1XeaGVW1wE)：在MSRA（新闻语料）上训练的模型
 2. [ctb8](https://drive.google.com/drive/folders/1oLN7dlcPvQ97ypk4JZNLOQteUd4DaEdn?usp=sharing)：在CTB8（新闻文本及网络文本的混合型语料）上训练的模型
