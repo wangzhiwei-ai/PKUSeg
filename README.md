@@ -67,17 +67,15 @@ MSRA数据由[第二届国际汉语分词评测比赛](http://sighan.cs.uchicago.edu/bakeoff2005
 ## 各类分词工具包的性能对比
 我们选择THULAC、结巴分词国内代表分词软件与LancoSeg做性能比较。我们选择Windows作为测试环境，在新闻数据(MSRA)和混合型文本(CTB8)数据上对不同软件进行了速度和准确率测试。我们使用了第二届国际汉语分词评测比赛提供的分词评价脚本。评测结果如下：
 
-MSRA
 
-|Algorithm | Time | F-score| Error Rate |
+|MSRA | Time | F-score| Error Rate |
 |:------------|-------:|------------:|------------:|
 | jieba | 0.82s |81.45 | 18.55
 | THULAC | 7.12s | 85.48 |  14.52
 | PKUSeg | 9.49s | **96.75 (+13.18%)**| **3.25 (-79.33%)**
 
-CTB8
 
-|Algorithm | Time | F-score | Error Rate|
+|CTB8 | Time | F-score | Error Rate|
 |:------------|-------:|------------:|------------:|
 |jieba|1.29s|79.58|20.42
 |THULAC|5.15s|87.77|12.23
