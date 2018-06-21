@@ -1,22 +1,21 @@
 # PKUSeg：一个高准确度的中文分词工具包
 PKUSeg简单易用，支持多领域分词，在不同领域的数据上都大幅提高了分词的准确率。
 
-
 MSRA
 
-|Algorithm | Time | F-score| Error |
+|Algorithm | Time | F-score| Error Rate |
 |:------------|-------:|------------:|------------:|
 | jieba | 0.82s |81.45 | 18.55
 | THULAC | 7.12s | 85.48 |  14.52
-| PKUSeg | 9.49s | **96.75** (+11.27)| **3.25** (-79.33%)
+| PKUSeg | 9.49s | **96.75 (+13.18%)**| **3.25 (-79.33%)**
 
 CTB8
 
-|Algorithm | Time | F-score | Error |
+|Algorithm | Time | F-score | Error Rate|
 |:------------|-------:|------------:|------------:|
 |jieba|1.29s|79.58|20.42
 |THULAC|5.15s|87.77|12.23
-|PKUSeg|6.78s|**95.64**(+7.87)|4.36(-63.67%)
+|PKUSeg|6.78s|**95.64 (+8.97%)**|**4.36 (-63.67%)**
 
 
 ## 目录
@@ -49,18 +48,18 @@ PKUSeg由北京大学语言计算与机器学习研究组研制推出的一套全新的中文分词工具包。PKUS
     
 ### 运行样例
 	
-    pkuseg.exe test data/input.txt data/output.txt 		        windows环境下进行分词
+    pkuseg.exe test data/input.txt data/output.txt 		windows环境下进行分词
 	pkuseg.exe train data/train.txt data/test.txt 		根据指定的训练文件自定义训练，训练模型会保存到seg/bin/x64/Release/model目录下
     mono pkuseg.exe test data/input.txt data/output.txt 		linux环境下进行分词
 
 	
 ### 预训练模型
-分词模式下，用户需要在seg/bin/x64/Release/model/fast加载预训练好的模型，根据具体需要，用户可以自定义的选择不同的预训练模型。以下是对模型的说明及下载地址(双击下载)：
+分词模式下，用户需要在seg/bin/x64/Release/model/fast加载预训练好的模型，根据具体需要，用户可以自定义的选择不同的预训练模型。以下是对模型的说明及下载地址：
 
 ```
 msra：在MSRA（新闻语料）上训练的模型，下载地址https://drive.google.com/open?id=1c1Dn2aKy5KFJWir2-GkXhG1XeaGVW1wE
-ctb8(https://drive.google.com/drive/folders/1oLN7dlcPvQ97ypk4JZNLOQteUd4DaEdn?usp=sharing)： 在CTB8（新闻文本及网络文本的混合型语料）上训练的模型
-weibo(https://drive.google.com/open?id=1ZdZluWRV4jDM7x7_BwrOHsLS-m17rdnM)：在微博（网络文本语料）上训练的模型
+ctb8：在CTB8（新闻文本及网络文本的混合型语料）上训练的模型，下载地址为https://drive.google.com/drive/folders/1oLN7dlcPvQ97ypk4JZNLOQteUd4DaEdn?usp=sharing
+weibo：在微博（网络文本语料）上训练的模型，下载地址为https://drive.google.com/open?id=1ZdZluWRV4jDM7x7_BwrOHsLS-m17rdnM
 ```
 MSRA数据由[第二届国际汉语分词评测比赛](http://sighan.cs.uchicago.edu/bakeoff2005/)提供，CTB8由[LDC](https://catalog.ldc.upenn.edu/ldc2013t21)提供，weibo数据由[NLPCC](http://tcci.ccf.org.cn/conference/2016/pages/page05_CFPTasks.html)分词比赛提供。
 
@@ -74,7 +73,7 @@ MSRA
 |:------------|-------:|------------:|------------:|
 | jieba | 0.82s |81.45 | 18.55
 | THULAC | 7.12s | 85.48 |  14.52
-| PKUSeg | 9.49s | **96.75** (+13.18%)| **3.25** (-79.33%)
+| PKUSeg | 9.49s | **96.75 (+13.18%)**| **3.25 (-79.33%)**
 
 CTB8
 
@@ -82,7 +81,7 @@ CTB8
 |:------------|-------:|------------:|------------:|
 |jieba|1.29s|79.58|20.42
 |THULAC|5.15s|87.77|12.23
-|PKUSeg|6.78s|**95.64(+8.97%)**|**4.36(-63.67%)**
+|PKUSeg|6.78s|**95.64 (+8.97%)**|**4.36 (-63.67%)**
 
 ## 开源协议
 1. PKUSeg面向国内外大学、研究所、企业以及个人用于研究目的免费开放源代码。
