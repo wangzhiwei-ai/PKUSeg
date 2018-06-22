@@ -1,1 +1,0 @@
-pkuseg.exe test data/msr_test.utf8 data/msr_test_output_soft.utf8

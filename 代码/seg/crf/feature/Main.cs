@@ -31,9 +31,9 @@ namespace Program1
                 //Console.WriteLine("read FeatureBinary" + timer.Elapsed);
                 //timer.Restart();
                 //Feature.saveFeatureBinary(Program1.Global.modelDir + "/featureSetBinary.txt");
-                convertTest(testFile, "data/temp/c.test.txt", "data/temp/test.raw.txt");
+                convertTest(testFile, "temp/c.test.txt", "temp/test.raw.txt");
                 
-                Feature.processFile("data/temp/c.test.txt", "data/temp/test.txt");
+                Feature.processFile("temp/c.test.txt", "temp/test.txt");
                 //timer.Stop();
                 //Console.WriteLine("convert" + timer.Elapsed);
 
@@ -45,14 +45,14 @@ namespace Program1
                 //baseHashMap<string, int> featureIndexMap = new baseHashMap<string, int>();
                 //baseHashMap<string, int> tagIndexMap = new baseHashMap<string, int>();
 
-                convertTrain(trainFile, "data/temp/c.train.txt", true);
+                convertTrain(trainFile, "temp/c.train.txt", true);
                 saveBigramFeature(Program1.Global.modelDir + "/bigram_word.txt");
                 saveUnigram(Program1.Global.modelDir + "/unigram_word.txt");
 
-                Feature.getFeatureSet("data/temp/c.train.txt");
+                Feature.getFeatureSet("temp/c.train.txt");
                 Feature.saveFeature(Program1.Global.modelDir + "/featureSet.txt");
                 //now process for the test-inputfile, note that test-infile should share the same featureMap and labelMap
-                Feature.processFile("data/temp/c.train.txt", "data/temp/train.txt");
+                Feature.processFile("temp/c.train.txt", "temp/train.txt");
             }
 
 

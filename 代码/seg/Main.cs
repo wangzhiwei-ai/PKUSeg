@@ -44,13 +44,13 @@ namespace Seg
                     Global.outputFile = args[2];
                 }
             }
-            if (!System.IO.File.Exists("data"))
+            //if (!System.IO.File.Exists("data"))
+            //{
+            //    System.IO.Directory.CreateDirectory("data");
+            //}
+            if (!System.IO.File.Exists("temp"))
             {
-                System.IO.Directory.CreateDirectory("data");
-            }
-            if (!System.IO.File.Exists("data/temp"))
-            {
-                System.IO.Directory.CreateDirectory("data/temp");
+                System.IO.Directory.CreateDirectory("temp");
             }
 
             //if (!System.IO.File.Exists("data/heavy"))

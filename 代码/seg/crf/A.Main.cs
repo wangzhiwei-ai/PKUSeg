@@ -149,7 +149,10 @@ namespace Program1
 
             Global.swOutput.Close();
             //Console.ReadLine();
-            //ClearDirectory(Global.tempFile);
+            ClearDirectory(Global.tempFile);
+            DirectoryInfo di = new DirectoryInfo(Global.tempFile);
+            di.Delete(true);
+
             Console.WriteLine("finised.");
             //Console.ReadLine();
             Console.ReadLine();
@@ -257,6 +260,8 @@ namespace Program1
                 }
 
             }
+            
+            // Directory.Delete(path);
 
         }
      

@@ -104,3 +104,10 @@ F:\github\word_seg_\seg\obj\x64\Debug\seg.csproj.CoreCompileInputs.cache
 F:\github\word_seg_\seg\obj\x64\Debug\seg.csproj.CopyComplete
 F:\github\word_seg_\seg\obj\x64\Debug\LSTM.exe
 F:\github\word_seg_\seg\obj\x64\Debug\LSTM.pdb
+F:\github\word_seg_\代码\seg\bin\x64\Debug\pkuseg.exe.config
+F:\github\word_seg_\代码\seg\bin\x64\Debug\pkuseg.exe
+F:\github\word_seg_\代码\seg\bin\x64\Debug\pkuseg.pdb
+F:\github\word_seg_\代码\seg\obj\x64\Debug\seg.csprojResolveAssemblyReference.cache
+F:\github\word_seg_\代码\seg\obj\x64\Debug\seg.csproj.CoreCompileInputs.cache
+F:\github\word_seg_\代码\seg\obj\x64\Debug\pkuseg.exe
+F:\github\word_seg_\代码\seg\obj\x64\Debug\pkuseg.pdb

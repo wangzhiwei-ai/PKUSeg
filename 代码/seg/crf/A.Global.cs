@@ -19,7 +19,7 @@ namespace Program1
         //default values
         public static string trainFile = "data/msr_training.utf8";
         public static string testFile = "data/msr_test_gold.utf8";
-        public static string tempFile = "data/temp";
+        public static string tempFile = "temp";
         //public static string readModel = "msr";
         public static string readFile = "data/msr_test_gold.utf8";//"data/msr_test.utf8";
         public static string outputFile = "data/msr_test_output.utf8";

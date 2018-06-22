@@ -53,10 +53,7 @@ F:\github\word_seg_\seg\obj\x64\Release\pkuseg.pdb
 F:\github\word_seg_\代码\seg\bin\x64\Release\pkuseg.exe.config
 F:\github\word_seg_\代码\seg\bin\x64\Release\pkuseg.exe
 F:\github\word_seg_\代码\seg\bin\x64\Release\pkuseg.pdb
-F:\github\word_seg_\代码\seg\bin\x64\Release\MathNet.Numerics.dll
-F:\github\word_seg_\代码\seg\bin\x64\Release\MathNet.Numerics.xml
 F:\github\word_seg_\代码\seg\obj\x64\Release\seg.csprojResolveAssemblyReference.cache
 F:\github\word_seg_\代码\seg\obj\x64\Release\seg.csproj.CoreCompileInputs.cache
-F:\github\word_seg_\代码\seg\obj\x64\Release\seg.csproj.CopyComplete
 F:\github\word_seg_\代码\seg\obj\x64\Release\pkuseg.exe
 F:\github\word_seg_\代码\seg\obj\x64\Release\pkuseg.pdb
