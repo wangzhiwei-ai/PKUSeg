@@ -26,6 +26,7 @@ namespace Program1
             if (Global.runMode.Contains("train"))
             {
                 getMaps(Global.fTrain);
+                saveFeature(Global.modelDir + "/featureIndex.txt");
                 convertFile(Global.fTrain);
 
             }
