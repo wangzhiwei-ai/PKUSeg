@@ -6,6 +6,7 @@ PKUSeg简单易用，支持多领域分词，在不同领域的数据上都大幅提高了分词的准确率。
 * [各类分词工具包的性能对比](#各类分词工具包的性能对比)
 * [使用方式](#使用方式)
 * [相关论文](#相关论文)
+* [其它语言实现](#其它语言实现)
 * [作者](#作者)
 
 ## 主要亮点
@@ -98,6 +99,9 @@ booktitle = {Proceedings of the 54th Annual Meeting of the Association for Compu
 year = {2016}}
 ```
 
+## 其它语言实现
+PKUSeg（python版）：
+https://github.com/lancopku/PKUSeg-python
 
 ## 作者
 
